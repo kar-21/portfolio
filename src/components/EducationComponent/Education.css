@@ -14,15 +14,7 @@
   padding: 1% 0.5% 1% 0.5% !important;
   font-size: 90% !important;
 }
-.Carousel {
-  position: relative !important;
-  width: 80% !important;
-  margin: auto !important;
-}
-.Carousel .Indicators {
-  margin-top: -20px !important;
-}
-.Carousel img {
+.carosel img {
   margin-top: 1% !important;
 }
 .xs-education {
@@ -46,11 +38,8 @@
     padding-top: 4.5%;
     margin: 0px 0px 3.5% 10%;
   }
-  .Carousel img {
-    margin-top: 7% !important;
-  }
-  .Carousel .Indicators {
-    margin-top: 10px !important;
+  .carosel img {
+    margin-top: 5% !important;
   }
   .table-container {
     margin-bottom: 3%;
@@ -90,20 +79,15 @@
     margin-bottom: 1%;
   }
   .hobbies {
+    margin-top: 8%;
     width: 80%;
   }
   .hobbies p {
     font-size: 120%;
     margin-bottom: 1.5%;
   }
-  .Carousel {
-    width: 100% !important;
-  }
-  .Carousel img {
+  .carosel img {
     margin-top: 10% !important;
     height: 140% !important;
-  }
-  .Carousel .Indicators {
-    margin-top: 10px !important;
   }
 }
