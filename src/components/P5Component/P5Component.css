@@ -1,0 +1,93 @@
+.page-four {
+  height: 100vh;
+}
+.p5-icon {
+  margin-left: 15px;
+  margin-top: 0px;
+  width: 30px;
+  height: 30px;
+}
+.p5-introduction {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+.p5-content p {
+  font-size: 130%;
+  margin-right: 10%;
+}
+.p5-content p a {
+  color: #e62f5c;
+  font-size: 100%;
+}
+.iframe-p5,
+iframe {
+  width: 356px;
+  height: 356px;
+  border: none;
+  margin: auto;
+}
+@media only screen and (min-width: 1375px) {
+  .page-four h2 {
+    margin-bottom: 4%;
+  }
+}
+@media only screen and (min-width: 951px) and (max-width: 1100px) {
+}
+@media only screen and (min-width: 701px) and (max-width: 950px) {
+  .page-four h2 {
+    margin-bottom: 4.5%;
+  }
+  .p5-content p {
+    font-size: 95%;
+    margin-right: 5%;
+  }
+  .p5-introduction {
+    width: 90%;
+    margin-left: 10%;
+  }
+  .p5-content {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .p5-introduction {
+    display: flex;
+    flex-direction: column;
+  }
+  .iframe-p5 {
+    margin-left: -20px;
+  }
+  iframe {
+    margin-top: 12px;
+    margin-left: 43px;
+    border: none;
+  }
+  .p5-content p {
+    font-size: 110%;
+    margin-right: 0%;
+  }
+}
+@media only screen and (max-width: 390px) {
+  .iframe-p5 {
+    margin-left: -54px;
+  }
+  iframe {
+    margin-top: 20px;
+    margin-left: 62px;
+    width: 285px;
+    height: 285px;
+    -ms-transform: scale(0.96);
+    -moz-transform: scale(0.96);
+    -o-transform: scale(0.96);
+    -webkit-transform: scale(0.96);
+    transform: scale(0.96);
+
+    -ms-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+  }
+}
