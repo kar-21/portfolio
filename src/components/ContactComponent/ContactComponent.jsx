@@ -20,7 +20,7 @@ const style = {
   marginRight: "5px",
 };
 
-const shareUrl = "http://localhost:3000";
+const shareUrl = "https://karthik-portfolio.firebaseapp.com/";
 
 class ContactComponent extends React.Component {
   constructor(props) {
