@@ -1,6 +1,3 @@
-.page-three {
-  height: 100vh;
-}
 .intoduction {
   width: 80%;
   margin: auto;
@@ -34,6 +31,9 @@
   margin: auto;
 }
 @media only screen and (min-width: 1375px) {
+  .page-three {
+    height: 768px;
+  }
   .intoduction p {
     margin-bottom: 2%;
   }
@@ -42,11 +42,17 @@
   }
 }
 @media only screen and (min-width: 951px) and (max-width: 1100px) {
+  .page-three {
+    height: 768px;
+  }
   .project p {
     margin-bottom: 7%;
   }
 }
 @media only screen and (min-width: 701px) and (max-width: 950px) {
+  .page-three {
+    height: 576px;
+  }
   .intoduction p {
     font-size: 95%;
     margin-bottom: 2%;
@@ -59,6 +65,9 @@
   }
 }
 @media only screen and (max-width: 700px) {
+  .page-three {
+    height: 100vh;
+  }
   .project-experiance {
     display: flex;
     flex-direction: column;

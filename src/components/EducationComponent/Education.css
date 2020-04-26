@@ -1,12 +1,9 @@
-.page-two {
-  height: 100vh;
-}
 .table-container {
   width: 80% !important;
   margin: auto;
 }
 .page-two h2 {
-  padding-top: 2.5%;
+  padding-top: 1%;
   margin: 0px 0px 1.5% 10%;
   font-size: 250%;
 }
@@ -28,12 +25,18 @@
   margin-bottom: 1%;
 }
 @media only screen and (min-width: 1375px) {
+  .page-two {
+    height: 768px;
+  }
   .padding {
     padding: 1.5% !important;
     font-size: 100% !important;
   }
 }
 @media only screen and (min-width: 951px) and (max-width: 1100px) {
+  .page-two {
+    height: 768px;
+  }
   .page-two h2 {
     padding-top: 4.5%;
     margin: 0px 0px 3.5% 10%;
@@ -46,9 +49,12 @@
   }
 }
 @media only screen and (min-width: 701px) and (max-width: 950px) {
+  .page-two {
+    height: 576px;
+  }
   .page-two h2 {
-    padding-top: 4.5%;
-    margin: 0px 0px 3.5% 10%;
+    padding-top: 3%;
+    margin: 0px 0px 1% 10%;
   }
   .table-container {
     width: 98% !important;
@@ -58,9 +64,13 @@
   }
   .hobbies h3 {
     font-size: 130%;
+    margin-bottom: 1%;
   }
 }
 @media only screen and (max-width: 700px) {
+  .page-two {
+    height: 100vh;
+  }
   .page-two h2 {
     padding-top: 7.5%;
     margin: 0px 0px 3.5% 10%;
@@ -75,7 +85,7 @@
     margin: auto;
   }
   .xs-education p {
-    font-size: 110%;
+    font-size: 118%;
     margin-bottom: 1%;
   }
   .hobbies {

@@ -1,5 +1,5 @@
 .page-one {
-  height: 100vh;
+  height: 768px;
 }
 h2 {
   padding-top: 3%;
@@ -34,6 +34,9 @@ ul {
   font-size: 110%;
 }
 @media only screen and (min-width: 1375px) {
+  .page-one {
+    height: 768px;
+  }
   p {
     margin-bottom: 8%;
     font-size: 110%;
@@ -46,6 +49,9 @@ ul {
   }
 }
 @media only screen and (min-width: 701px) and (max-width: 950px) {
+  .page-one {
+    height: 576px;
+  }
   p,
   ul {
     font-size: 80%;
@@ -59,12 +65,16 @@ ul {
   }
 }
 @media only screen and (max-width: 700px) {
+  .page-one {
+    height: 100vh;
+  }
   .me-content {
     display: flex;
     flex-direction: column;
   }
   .content {
     width: 100%;
+    margin-right: 0px;
   }
   .profile-image {
     display: none;
@@ -74,8 +84,8 @@ ul {
   }
   p,
   ul {
-    margin-bottom: 2%;
-    font-size: 90%;
+    margin-bottom: 0%;
+    font-size: 88%;
   }
   h2 {
     margin-top: 2%;

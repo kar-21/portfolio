@@ -1,9 +1,10 @@
 import React from "react";
 import "./P5Component.css";
 import p5Icon from "../../assets/icons/p5-icon.png";
+import P5Helper from "./P5Helper";
 
 const p5IconBackground = {
-  backgroundImage: `url(${p5Icon})`
+  backgroundImage: `url(${p5Icon})`,
 };
 
 class P5Component extends React.Component {
@@ -39,8 +40,8 @@ class P5Component extends React.Component {
               </a>
             </p>
           </div>
-          <div className="iframe-p5">
-            <iframe src="https://editor.p5js.org/karthiks210198/embed/6an0KBYtG"></iframe>
+          <div className="frame-p5">
+            <P5Helper />
           </div>
         </div>
       </div>
