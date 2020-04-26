@@ -1,3 +1,6 @@
+.page-one-unset {
+  height: unset;
+}
 .page-one {
   height: 768px;
 }
@@ -23,7 +26,10 @@ h2 {
 .profile-image-content {
   display: none;
 }
-img {
+.profile-image-content img {
+  width: 100%;
+}
+.profile-image img {
   margin-top: 29%;
   width: 100%;
 }
@@ -44,7 +50,7 @@ ul {
   ul {
     font-size: 110%;
   }
-  img {
+  .profile-image img {
     margin-top: 24%;
   }
 }
@@ -60,7 +66,7 @@ ul {
     margin-top: 3%;
     margin-bottom: 2%;
   }
-  img {
+  .profile-image img {
     margin-top: 41%;
   }
 }
@@ -91,7 +97,7 @@ ul {
     margin-top: 2%;
     margin-bottom: 1.5%;
   }
-  img {
+  .profile-image img {
     margin-top: 0%;
   }
 }

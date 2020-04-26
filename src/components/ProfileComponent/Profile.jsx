@@ -15,9 +15,22 @@ const skillArray = [
 ];
 
 class Profile extends React.Component {
-  
+  isHeightUnset = false;
   constructor(props) {
     super(props);
+    if (this.isScreenOutRange()) {
+      this.isHeightUnset = true;
+    }
+  }
+
+  isScreenOutRange() {
+    return (
+      (window.screen.width > 700 &&
+        window.screen.width < 950 &&
+        window.screen.height < 576) ||
+      ((window.screen.width < 700 || window.screen.width > 950) &&
+        window.screen.height < 786)
+    );
   }
 
   render() {
@@ -26,7 +39,7 @@ class Profile extends React.Component {
     ));
 
     return (
-      <div className="page-one" ref={this.props.refProp}>
+      <div className={this.isHeightUnset ? "page-one-unset" : "page-one"} ref={this.props.refProp}>
         <h2>// Me</h2>
         <div className="me-content">
           <div className="content">

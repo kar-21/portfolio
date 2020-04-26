@@ -9,6 +9,10 @@ h1, h4 {
   margin: 0px;
 }
 
+.hello-component-unset {
+  height: unset
+}
+
 .scroll {
   width: 75%;
   margin: auto;

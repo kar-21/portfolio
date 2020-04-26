@@ -8,9 +8,27 @@ const p5IconBackground = {
 };
 
 class P5Component extends React.Component {
+  isHeightUnset = false;
+  constructor(props) {
+    super(props);
+    if (this.isScreenOutRange()) {
+      this.isHeightUnset = true;
+    }
+  }
+
+  isScreenOutRange() {
+    return (
+      (window.screen.width > 700 &&
+        window.screen.width < 950 &&
+        window.screen.height < 576) ||
+      ((window.screen.width < 700 || window.screen.width > 950) &&
+        window.screen.height < 786)
+    );
+  }
+
   render() {
     return (
-      <div className="page-four">
+      <div className={this.isHeightUnset ? "page-four-unset" : "page-four"}>
         <h2>
           // P5.js
           <img className="p5-icon" src={p5Icon} />

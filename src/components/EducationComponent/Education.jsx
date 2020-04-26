@@ -55,17 +55,32 @@ const rows = [
 ];
 
 class EducationComponent extends React.Component {
+  isHeightUnset = false;
   constructor(props) {
     super(props);
     this.state = { showImageOne: true };
+    if (this.isScreenOutRange()) {
+      this.isHeightUnset = true;
+    }
   }
+
+  isScreenOutRange() {
+    return (
+      (window.screen.width > 700 &&
+        window.screen.width < 950 &&
+        window.screen.height < 576) ||
+      ((window.screen.width < 700 || window.screen.width > 950) &&
+        window.screen.height < 786)
+    );
+  }
+
   render() {
     setTimeout(
       () => this.setState({ showImageOne: !this.state.showImageOne }),
       10000
     );
     return (
-      <div className="page-two">
+      <div className={this.isHeightUnset ? "page-two-unset" : "page-two"}>
         <h2>// Education</h2>
         <div className="table-container">
           <TableContainer>
@@ -146,11 +161,11 @@ class EducationComponent extends React.Component {
           </p>
         </div>
         <div className="carosel">
-        {this.state.showImageOne ? (
-          <img src={pineapple0} alt="pineapple-0" />
-        ) : (
-          <img src={pineapple1} alt="pineapple-1" />
-        )}
+          {this.state.showImageOne ? (
+            <img src={pineapple0} alt="pineapple-0" />
+          ) : (
+            <img src={pineapple1} alt="pineapple-1" />
+          )}
         </div>
       </div>
     );

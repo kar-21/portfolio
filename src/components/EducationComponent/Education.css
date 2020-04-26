@@ -1,3 +1,6 @@
+.page-two-unset {
+  height: unset;
+}
 .table-container {
   width: 80% !important;
   margin: auto;
@@ -12,6 +15,7 @@
   font-size: 90% !important;
 }
 .carosel img {
+  width: 100%;
   margin-top: 1% !important;
 }
 .xs-education {

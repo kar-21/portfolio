@@ -1,3 +1,6 @@
+.page-three-unset {
+  height: unset;
+}
 .intoduction {
   width: 80%;
   margin: auto;
@@ -23,7 +26,8 @@
   font-size: 150%;
   margin-bottom: 2%;
 }
-.page-three img {
+.code-image img {
+  width: 100%;
   margin-top: 1%;
 }
 .page-three .code-image {

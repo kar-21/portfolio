@@ -3,13 +3,27 @@ import "./Work.css";
 import code from "../../assets/images/code.jpg";
 
 class WorkComponent extends React.Component {
+  isHeightUnset = false;
   constructor(props) {
     super(props);
+    if (this.isScreenOutRange()) {
+      this.isHeightUnset = true;
+    }
+  }
+
+  isScreenOutRange() {
+    return (
+      (window.screen.width > 700 &&
+        window.screen.width < 950 &&
+        window.screen.height < 576) ||
+      ((window.screen.width < 700 || window.screen.width > 950) &&
+        window.screen.height < 786)
+    );
   }
 
   render() {
     return (
-      <div className="page-three" ref={this.props.refProp}>
+      <div className={this.isHeightUnset ? "page-three-unset" : "page-three"} ref={this.props.refProp}>
         <h2>// Work</h2>
         <div className="intoduction">
           <p>
