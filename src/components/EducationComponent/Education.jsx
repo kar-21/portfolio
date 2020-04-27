@@ -137,18 +137,17 @@ class EducationComponent extends React.Component {
         <div className="xs-education">
           <p>
             I completed {rows[0].course} from the {rows[0].collageNmae}{" "}
-            affiliated to
-            {rows[0].universityName} with an aggregate of {rows[0].aggregate} in
-            the year {rows[0].yearOfPassing}.
+            affiliated to {rows[0].universityName} with an aggregate of{" "}
+            {rows[0].aggregate} in the year {rows[0].yearOfPassing}.
           </p>
           <p>
-            In the year {rows[1].yearOfPassing}, I completed {rows[1].course} in
-            {rows[1].domain} from the {rows[1].collageNmae} affiliated to
+            In the year {rows[1].yearOfPassing}, I completed {rows[1].course} in{" "}
+            {rows[1].domain} from the {rows[1].collageNmae} affiliated to{" "}
             {rows[1].universityName} with an aggregate of {rows[1].aggregate}.
           </p>
           <p>
-            In the year {rows[2].yearOfPassing}, I percived {rows[2].course} in
-            {rows[2].domain} domian from the {rows[2].collageNmae} affiliated to
+            In the year {rows[2].yearOfPassing}, I percived {rows[2].course} in{" "}
+            {rows[2].domain} domian from the {rows[2].collageNmae} affiliated to{" "}
             {rows[2].universityName} with an aggregate of {rows[2].aggregate}.
           </p>
           <p></p>

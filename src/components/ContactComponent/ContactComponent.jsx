@@ -14,8 +14,6 @@ import {
 } from "react-share";
 
 const style = {
-  height: "30px",
-  width: "30px",
   borderRadius: "50%",
   marginRight: "5px",
 };
