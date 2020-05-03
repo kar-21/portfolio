@@ -6,8 +6,7 @@ import TableCell from "@material-ui/core/TableCell";
 import TableContainer from "@material-ui/core/TableContainer";
 import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
-import pineapple0 from "../../assets/images/pineapple-0.jpg";
-import pineapple1 from "../../assets/images/pineapple-1.jpg";
+import { Parallax } from "react-parallax";
 
 function createData(
   course,
@@ -55,32 +54,16 @@ const rows = [
 ];
 
 class EducationComponent extends React.Component {
-  isHeightUnset = false;
-  constructor(props) {
-    super(props);
-    this.state = { showImageOne: true };
-    if (this.isScreenOutRange()) {
-      this.isHeightUnset = true;
-    }
-  }
-
-  isScreenOutRange() {
-    return (
-      (window.screen.width > 700 &&
-        window.screen.width < 950 &&
-        window.screen.height < 576) ||
-      ((window.screen.width < 700 || window.screen.width > 950) &&
-        window.screen.height < 786)
-    );
-  }
-
   render() {
-    setTimeout(
-      () => this.setState({ showImageOne: !this.state.showImageOne }),
-      10000
-    );
     return (
-      <div className={this.isHeightUnset ? "page-two-unset" : "page-two"}>
+      <div className="page-two-unset">
+        <Parallax
+          bgImage={require("../../assets/images/apple.jpg")}
+          bgImageAlt="sunset-parallex"
+          strength={500}
+        >
+          <div className="carosel"></div>
+        </Parallax>
         <h2>// Education</h2>
         <div className="table-container">
           <TableContainer>
@@ -137,18 +120,17 @@ class EducationComponent extends React.Component {
         <div className="xs-education">
           <p>
             I completed {rows[0].course} from the {rows[0].collageNmae}{" "}
-            affiliated to
-            {rows[0].universityName} with an aggregate of {rows[0].aggregate} in
-            the year {rows[0].yearOfPassing}.
+            affiliated to {rows[0].universityName} with an aggregate of{" "}
+            {rows[0].aggregate} in the year {rows[0].yearOfPassing}.
           </p>
           <p>
-            In the year {rows[1].yearOfPassing}, I completed {rows[1].course} in
-            {rows[1].domain} from the {rows[1].collageNmae} affiliated to
+            In the year {rows[1].yearOfPassing}, I completed {rows[1].course} in{" "}
+            {rows[1].domain} from the {rows[1].collageNmae} affiliated to{" "}
             {rows[1].universityName} with an aggregate of {rows[1].aggregate}.
           </p>
           <p>
-            In the year {rows[2].yearOfPassing}, I percived {rows[2].course} in
-            {rows[2].domain} domian from the {rows[2].collageNmae} affiliated to
+            In the year {rows[2].yearOfPassing}, I percived {rows[2].course} in{" "}
+            {rows[2].domain} domian from the {rows[2].collageNmae} affiliated to{" "}
             {rows[2].universityName} with an aggregate of {rows[2].aggregate}.
           </p>
           <p></p>
@@ -159,13 +141,6 @@ class EducationComponent extends React.Component {
             I am amateur Photographer. I love Travelling & Hiking. All together
             makes me to explore exotic locations.
           </p>
-        </div>
-        <div className="carosel">
-          {this.state.showImageOne ? (
-            <img src={pineapple0} alt="pineapple-0" />
-          ) : (
-            <img src={pineapple1} alt="pineapple-1" />
-          )}
         </div>
       </div>
     );

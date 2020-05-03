@@ -14,9 +14,9 @@
   padding: 1% 0.5% 1% 0.5% !important;
   font-size: 90% !important;
 }
-.carosel img {
+.carosel {
   width: 100%;
-  margin-top: 1% !important;
+  height: 500px;
 }
 .xs-education {
   display: none;
@@ -25,16 +25,19 @@
   width: 70%;
   margin: auto;
 }
-.hobbies p {
-  margin-bottom: 1%;
-}
 @media only screen and (min-width: 1375px) {
   .page-two {
     height: 768px;
   }
   .padding {
-    padding: 1.5% !important;
-    font-size: 100% !important;
+    font-size: 120% !important;
+  }
+  .hobbies h3 {
+    font-size: 185%;
+    margin-bottom: 1%;
+  }
+  .hobbies p {
+    margin: 4% 0px 4% 0px;
   }
 }
 @media only screen and (min-width: 951px) and (max-width: 1100px) {
@@ -45,11 +48,15 @@
     padding-top: 4.5%;
     margin: 0px 0px 3.5% 10%;
   }
-  .carosel img {
-    margin-top: 5% !important;
-  }
   .table-container {
     margin-bottom: 3%;
+  }
+  .hobbies h3 {
+    font-size: 130%;
+    margin-bottom: 1%;
+  }
+  .hobbies p {
+    margin: 4% 0px 4% 0px;
   }
 }
 @media only screen and (min-width: 701px) and (max-width: 950px) {
@@ -63,12 +70,12 @@
   .table-container {
     width: 98% !important;
   }
-  .hobbies p {
-    font-size: 95%;
-  }
   .hobbies h3 {
     font-size: 130%;
     margin-bottom: 1%;
+  }
+  .hobbies p {
+    margin: 4% 0px 4% 0px;
   }
 }
 @media only screen and (max-width: 700px) {
@@ -88,20 +95,11 @@
     width: 80%;
     margin: auto;
   }
-  .xs-education p {
-    font-size: 118%;
-    margin-bottom: 1%;
-  }
   .hobbies {
-    margin-top: 8%;
     width: 80%;
   }
-  .hobbies p {
-    font-size: 120%;
-    margin-bottom: 1.5%;
-  }
-  .carosel img {
-    margin-top: 10% !important;
-    height: 140% !important;
+  .hobbies h3 {
+    font-size: 140%;
+    margin-top: 0px;
   }
 }

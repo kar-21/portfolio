@@ -2,13 +2,6 @@ import React from "react";
 import "./Navigation.css";
 import avatar from "../../assets/images/avatar.jpg";
 
-import Drawer from "@material-ui/core/Drawer";
-import Button from "@material-ui/core/Button";
-import List from "@material-ui/core/List";
-import MenuIcon from "@material-ui/icons/Menu";
-import Divider from "@material-ui/core/Divider";
-import ListItem from "@material-ui/core/ListItem";
-import ListItemText from "@material-ui/core/ListItemText";
 import Switch from "@material-ui/core/Switch";
 
 

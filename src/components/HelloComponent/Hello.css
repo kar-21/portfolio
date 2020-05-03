@@ -10,7 +10,10 @@ h1, h4 {
 }
 
 .hello-component-unset {
-  height: unset
+  height: unset;
+}
+.hello-component {
+  height: 607px;
 }
 
 .scroll {
@@ -57,7 +60,7 @@ h1, h4 {
 
 @media only screen and (min-width: 1375px) {
   .hello-component {
-    height: 730px;
+    height: 768px;
   }
   .hello-div {
     font-size: 315%;
@@ -85,7 +88,7 @@ h1, h4 {
 }
 @media only screen and (max-width: 700px) {
   .hello-component {
-    height: 720px;
+    height: 100vh;
   }
   .hello-div {
     font-size: 175%;
