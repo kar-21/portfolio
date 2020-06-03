@@ -72,7 +72,13 @@ const ContactComponent = (props) => {
               <>
                 <div className="github-card">
                   <div className="git-header">
-                    <img src={githubData.avatar_url} />
+                    <a
+                      className="contact-link"
+                      href="https://github.com/kar-21"
+                    >
+                      <img src={githubData.avatar_url} />
+                    </a>
+
                     <div className="git-name-id">
                       <span className="git-id">{githubData.login}</span>
                       <span className="git-name">{githubData.name}</span>
@@ -94,13 +100,20 @@ const ContactComponent = (props) => {
                     </div>
                   </div>
                   <div className="git-footer">
-                    <div className="git-button">
-                      <span>View Repos</span>
-                    </div>
+                    <a
+                      className="contact-link"
+                      href="https://github.com/kar-21?tab=repositories"
+                    >
+                      <div className="git-button">
+                        <span>View Repos</span> 
+                      </div>
+                    </a>
                     <div className="git-copyright">
-                      <img src={githubIcon} />
-                      <img src={octocatIcon} />
-                      <span className="copyright">&copy;</span>
+                      <a className="contact-link" href="https://github.com/">
+                        <img src={githubIcon} />
+                        <img src={octocatIcon} />
+                        <span className="copyright">&copy;</span>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -114,19 +127,36 @@ const ContactComponent = (props) => {
               <img className="p5-icon" src={p5Header}></img>P5 Editor
             </h3>
             <div className="p5-editor">
-              <a>3D moition</a>
-              <a>Snake game</a>
-              <a>Growing Tree</a>
-              <a>Follow Me</a>
-              <a>Merci phili</a>
+              <a href="https://editor.p5js.org/karthiks210198/sketches/6an0KBYtG">
+                3D moition
+              </a>
+              <a href="https://editor.p5js.org/karthiks210198/sketches/YthlJ7m4X">
+                Snake game
+              </a>
+              <a href="https://editor.p5js.org/karthiks210198/sketches/8YWBtFLS">
+                Growing Tree
+              </a>
+              <a href="https://editor.p5js.org/karthiks210198/sketches/ea_vbGyH">
+                Follow Me
+              </a>
+              <a href="https://editor.p5js.org/karthiks210198/sketches/ioU-BDYZn">
+                Merci phili
+              </a>
             </div>
             <div className="p5-button-container">
-              <div className="p5-button">
-                <span>View Examples</span>
-              </div>
+              <a
+                className="contact-link"
+                href="https://editor.p5js.org/karthiks210198/sketches"
+              >
+                <div className="p5-button">
+                  <span>View Examples</span>
+                </div>
+              </a>
               <div className="p5-copyright">
-                <img src={p5Icon} />
-                <span className="copyright">&copy;</span>
+                <a className="contact-link" href="https://p5js.org/">
+                  <img src={p5Icon} />
+                  <span className="copyright">&copy;</span>
+                </a>
               </div>
             </div>
           </div>
