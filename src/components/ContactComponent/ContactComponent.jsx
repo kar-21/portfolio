@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./ContactComponent.css";
 
-import { SocialMediaIconsReact } from "social-media-icons-react";
 import {
   EmailShareButton,
   FacebookShareButton,
@@ -17,7 +16,6 @@ import p5Icon from "../../assets/icons/p5.svg";
 import octocatIcon from "../../assets/icons/Octocat.png";
 import githubIcon from "../../assets/icons/github-icon.png";
 import p5Header from "../../assets/icons/p5js.ico";
-import { Link } from "react-router-dom";
 import Axios from "axios";
 
 const style = {
@@ -123,11 +121,9 @@ const ContactComponent = (props) => {
               <a>Merci phili</a>
             </div>
             <div className="p5-button-container">
-              <Link className="link" to="/examples">
-                <div className="p5-button">
-                  <span>View Examples</span>
-                </div>
-              </Link>
+              <div className="p5-button">
+                <span>View Examples</span>
+              </div>
               <div className="p5-copyright">
                 <img src={p5Icon} />
                 <span className="copyright">&copy;</span>
@@ -155,7 +151,9 @@ const ContactComponent = (props) => {
           </div>
           <div className="credits">
             <h5>&#169; Copyright 2020</h5>
-            <p className="credits-google">This website is hosted in firebase.</p>
+            <p className="credits-google">
+              This website is hosted in firebase.
+            </p>
           </div>
         </div>
       </div>
