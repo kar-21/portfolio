@@ -31,17 +31,194 @@ h5 {
   padding-top: 25px;
 }
 .credits h5 {
-  text-align: center;
   margin: 0px;
 }
 .App {
   width: 60%;
   margin-right: 7%;
 }
+.code-image {
+  width: 100%;
+  height: 331.25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.linkedin-badge {
+  padding: 60px 0% 0% 60px;
+}
+.p5-badge {
+  height: 211.25px;
+  width: 280px;
+  color: white;
+  background-color: rgb(48, 51, 54);
+  margin: 60px 60px 0% 0%;
+  padding: 20px;
+}
+.p5-badge h3 {
+  margin: 0px;
+}
+.p5-badge .p5-icon {
+  width: 18px;
+  margin-right: 10px;
+}
+.p5-editor {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+.p5-editor a {
+  font-size: 12px;
+  margin: 2px;
+}
+.p5-editor a:hover {
+  color: #1c4bd4;
+}
+.p5-button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.p5-copyright {
+  display: flex;
+  flex-direction: row;
+}
+.p5-copyright span {
+  color: gray;
+  margin: 15px 0px 0px 5px;
+}
+.p5-copyright img {
+  height: 30px;
+  margin-top: 10px;
+}
+.p5-button {
+  width: 110px;
+  height: 30px;
+  border-radius: 2px;
+  margin-top: 10px;
+  background-color: #008cc9;
+  text-align: center;
+}
+.p5-button span {
+  color: white;
+  font-size: 12px;
+  font-weight: bolder;
+  padding: 0px 10px;
+  top: 5px;
+  position: relative;
+  margin: 0px;
+  text-decoration: none;
+}
+.p5-button-container .link {
+  text-decoration: none;
+}
+.github-card {
+  height: 211.25px;
+  width: 280px;
+  color: white;
+  background-color: rgb(48, 51, 54);
+  margin: 60px 0% 0% 0%;
+  padding: 20px;
+}
+.github-card img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.git-header {
+  display: flex;
+  flex-direction: row;
+}
+.git-name-id {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+.git-name {
+  font-size: 13px;
+}
+.git-id {
+  font-size: 23px;
+  font-weight: bold;
+}
+.git-button {
+  width: 110px;
+  height: 30px;
+  border-radius: 2px;
+  margin-top: 10px;
+  background-color: #008cc9;
+  text-align: center;
+}
+.git-button span {
+  color: white;
+  font-size: 12px;
+  font-weight: bolder;
+  padding: 0px 10px;
+  top: 5px;
+  position: relative;
+  margin: 0px;
+  text-decoration: none;
+}
+.repo-follower {
+  display: flex;
+  flex-direction: row;
+  width: 143px;
+  margin: auto;
+}
+.git-numbers {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 6px;
+}
+.vertical-line {
+  margin: 10px 18px;
+  height: 60px;
+  border: 2px solid #fff;
+}
+.repos,
+.follower {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.git-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.git-copyright {
+  display: flex;
+  flex-direction: row;
+}
+.git-copyright span {
+  color: gray;
+  margin: 15px 0px 0px 5px;
+}
+.git-copyright img {
+  border-radius: 0%;
+  height: 25px;
+  width: unset;
+  margin-top: 9px;
+}
+.credits-google {
+  font-size: 10px;
+  margin: 0%;
+}
 @media only screen and (min-width: 701px) and (max-width: 950px) {
   .share,
   .follow-me {
     width: 50%;
+  }
+  .code-image {
+    height: 600px;
+    flex-wrap: wrap;
+  }
+  .github-card {
+    margin: 60px 60px 0px 0px;
+  }
+  .p5-badge {
+    margin: 60px 0px 60px 0px;
+    margin-left: calc((100% - 280px)/2);
   }
 }
 @media only screen and (max-width: 700px) {
@@ -50,7 +227,7 @@ h5 {
     margin: auto;
   }
   .social-media {
-    width: 75%;
+    width: 80%;
     margin: auto;
     display: flex;
     flex-direction: row;
@@ -65,8 +242,21 @@ h5 {
   .battery {
     display: none;
   }
+  .linkedin-badge {
+    padding: 42px 0% 0% calc((100% - 280px) / 2);
+  }
+  .code-image {
+    height: 801.25px;
+    flex-direction: column;
+  }
+  .p5-badge {
+    margin: 0px 0px 42px calc((100% - 280px) / 2);
+  }
+  .github-card {
+    margin: 42px 0px 42px calc((100% - 280px) / 2);
+  }
 }
-@media only screen and (max-width: 390px) {
+/* @media only screen and (max-width: 390px) {
   .contact-info {
     margin-top: 280px;
   }
@@ -78,7 +268,7 @@ h5 {
     margin-left: 4%;
     margin-right: 4%;
   }
-}
+} */
 .name-email-group {
   display: flex;
   flex-direction: row;

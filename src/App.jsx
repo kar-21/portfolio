@@ -10,8 +10,9 @@ import ThemeProvider from "@material-ui/styles/ThemeProvider";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import { createMuiTheme } from "@material-ui/core/styles";
 import ContactComponent from "./components/ContactComponent/ContactComponent";
-import { Parallax } from 'react-parallax';
-
+import { Parallax } from "react-parallax";
+import darkTheme from "./assets/images/dark-code.jpg";
+import lightTheme from "./assets/images/light-code.jpg";
 
 const App = () => {
   const meRefs = React.createRef();
@@ -31,23 +32,25 @@ const App = () => {
   function scrollToWork() {
     window.scrollTo(0, workRefs.current.offsetTop);
   }
-  function toggleTheme (checked) {
+  function toggleTheme(checked) {
     const theme1 = createMuiTheme({
       palette: {
         type: checked ? "light" : "dark",
       },
     });
     setTheme(theme1);
-  };
+  }
 
   return (
     <>
       <ThemeProvider theme={themeType}>
         <CssBaseline />
-        <Parallax blur={2}
-            bgImage={themeType.palette.type === "dark" ? require('./assets/images/dark-code.jpg') : require('./assets/images/light-code.jpg')}
-            bgImageAlt="sunset-parallex"
-            strength={500}>
+        <Parallax
+          blur={2}
+          bgImage={themeType.palette.type === "dark" ? darkTheme : lightTheme}
+          bgImageAlt="sunset-parallex"
+          strength={500}
+        >
           <NavigationComponent
             onClickMe={scrollToMe}
             onClickWork={scrollToWork}

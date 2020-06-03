@@ -1,6 +1,5 @@
 import React from "react";
 import "./Work.css";
-import { Parallax } from "react-parallax";
 
 const WorkComponent = (props) => {
   return (
@@ -35,13 +34,6 @@ const WorkComponent = (props) => {
           </p>
         </div>
       </div>
-      <Parallax
-        bgImage={require("../../assets/images/camera.jpg")}
-        bgImageAlt="sunset-parallex"
-        strength={500}
-      >
-        <div className="code-image"></div>
-      </Parallax>
     </div>
   );
 };
