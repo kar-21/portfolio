@@ -1,45 +1,48 @@
 import React, { useState } from "react";
 import "./App.css";
-import HelloComponent from "./components/HelloComponent/Hello";
-import NavigationComponent from "./components/NavigationComponent/Navigation";
-import ProfileComponent from "./components/ProfileComponent/Profile";
-import EducationComponent from "./components/EducationComponent/Education";
-import WorkComponent from "./components/WorkComponent/Work";
+import HelloComponent from "./components/Hello";
+import NavigationComponent from "./components/Navigation";
+import ProfileComponent from "./components/Profile";
+import EducationComponent from "./components/Education";
+import WorkComponent from "./components/Work";
+import ContactComponent from "./components/ContactComponent";
 
 import ThemeProvider from "@material-ui/styles/ThemeProvider";
 import CssBaseline from "@material-ui/core/CssBaseline";
-import { createMuiTheme } from "@material-ui/core/styles";
-import ContactComponent from "./components/ContactComponent/ContactComponent";
+import { createTheme } from "@material-ui/core/styles";
 import { Parallax } from "react-parallax";
 import darkTheme from "./assets/images/dark-code.jpg";
 import lightTheme from "./assets/images/light-code.jpg";
+import Project from "./components/Project";
 
 const App = () => {
   const meRefs = React.createRef();
   const workRefs = React.createRef();
 
-  const theme = createMuiTheme({
+  const theme = createTheme({
     palette: {
       type: "dark",
     },
   });
 
   const [themeType, setTheme] = useState(theme);
+  const [background, setBackground] = useState("dark");
 
-  function scrollToMe() {
+  const scrollToMe = () => {
     window.scrollTo(0, meRefs.current.offsetTop);
-  }
-  function scrollToWork() {
+  };
+  const scrollToWork = () => {
     window.scrollTo(0, workRefs.current.offsetTop);
-  }
-  function toggleTheme(checked) {
-    const theme1 = createMuiTheme({
+  };
+  const toggleTheme = (checked) => {
+    const theme1 = createTheme({
       palette: {
         type: checked ? "light" : "dark",
       },
     });
+    setBackground(checked ? "light" : "dark");
     setTheme(theme1);
-  }
+  };
 
   return (
     <>
@@ -56,11 +59,15 @@ const App = () => {
             onClickWork={scrollToWork}
             toggleTheme={toggleTheme}
           />
-          <HelloComponent theme={themeType.palette.type} />
+          <HelloComponent
+            onClickMe={scrollToMe}
+            theme={themeType.palette.type}
+          />
         </Parallax>
         <ProfileComponent refProp={meRefs} />
         <EducationComponent />
         <WorkComponent refProp={workRefs} />
+        <Project />
         <ContactComponent theme={themeType.palette.type} />
       </ThemeProvider>
     </>
