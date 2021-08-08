@@ -13,7 +13,6 @@ import { Parallax, Background } from "react-parallax";
 import darkTheme from "./assets/images/dark-code.jpg";
 import lightTheme from "./assets/images/light-code.jpg";
 import Project from "./components/Project";
-import "react-lazy-load-image-component/src/effects/blur.css";
 
 const App = () => {
   const meRefs = React.createRef();
