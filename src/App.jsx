@@ -38,7 +38,6 @@ const App = () => {
         type: checked ? "light" : "dark",
       },
     });
-    setBackground(checked ? "light" : "dark");
     setTheme(theme1);
   };
 
