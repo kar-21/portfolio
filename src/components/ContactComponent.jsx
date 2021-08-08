@@ -119,11 +119,20 @@ const ContactComponent = (props) => {
 
   const sendMail = () => {
     if (re.test(email)) {
-      Axios.post(sendMailUrl, {
-        name: name,
-        sender: email,
-        message: message,
-      })
+      Axios.post(
+        sendMailUrl,
+        {
+          headers: {
+            "Content-Type": "application/json",
+            "Access-Control-Allow-Origin": "*",
+          },
+        },
+        {
+          name: name,
+          sender: email,
+          message: message,
+        }
+      )
         .then((res) => {
           if (res.data.status === "Email sent") {
             setAlertMessage("E-mail Sent");

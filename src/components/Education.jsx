@@ -6,7 +6,6 @@ import TableContainer from "@material-ui/core/TableContainer";
 import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
 import { Parallax, Background } from "react-parallax";
-import { LazyLoadImage } from "react-lazy-load-image-component";
 import sunsetParallex from "../assets/images/apple.jpg";
 import { makeStyles } from "@material-ui/core/styles";
 import clsx from "clsx";
@@ -17,9 +16,6 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     flexDirection: "column",
     color: "white !important",
-  },
-  parallaxImage: {
-    width: "100vw",
   },
   carousel: {
     width: "100%",
@@ -136,15 +132,12 @@ const EducationComponent = (props) => {
   const classes = useStyles();
 
   return (
-    <Parallax strength={500} blur={4}>
-      <Background>
-        <LazyLoadImage
-          className={classes.parallaxImage}
-          src={sunsetParallex}
-          alt="sunset-parallex"
-          effect="blur"
-        />
-      </Background>
+    <Parallax
+      strength={500}
+      blur={4}
+      bgImage={sunsetParallex}
+      bgImageAlt="sunset-parallex"
+    >
       <div className={classes.pageTwo}>
         <h1 className={classes.header}>// Education</h1>
         <div className={classes.educationContent}>

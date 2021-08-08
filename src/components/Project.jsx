@@ -4,7 +4,6 @@ import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import CardHeader from "@material-ui/core/CardHeader";
 import { Parallax, Background } from "react-parallax";
-import { LazyLoadImage } from "react-lazy-load-image-component";
 
 import BattleShipImage from "../assets/images/battle-ship.png";
 import AirlineManagementImage from "../assets/images/airline-management.png";
@@ -20,9 +19,6 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("sm")]: {
       fontSize: "2rem",
     },
-  },
-  parallaxImage: {
-    width: "100vw",
   },
   projectContainer: {
     width: "90%",
@@ -68,15 +64,12 @@ const useStyles = makeStyles((theme) => ({
 const Project = (props) => {
   const classes = useStyles();
   return (
-    <Parallax blur={4} strength={500}>
-      <Background>
-        <LazyLoadImage
-          className={classes.parallaxImage}
-          src={CameraImage}
-          alt="sunset-parallex"
-          effect="blur"
-        />
-      </Background>
+    <Parallax
+      blur={4}
+      strength={500}
+      bgImage={CameraImage}
+      bgImageAlt="sunset-parallex"
+    >
       <h1 className={classes.header}>// Projects</h1>
       <div className={classes.projectContainer}>
         <a

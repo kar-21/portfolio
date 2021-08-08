@@ -36,9 +36,6 @@ h4 {
   background-size: contain;
   background-repeat: no-repeat;
 }
-.parallaxImage {
-  width: 100vw;
-}
 @media only screen and (max-width: 960px) {
   .arrow {
     width: 15px;

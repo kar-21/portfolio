@@ -10,7 +10,6 @@ import ThemeProvider from "@material-ui/styles/ThemeProvider";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import { createTheme } from "@material-ui/core/styles";
 import { Parallax, Background } from "react-parallax";
-import { LazyLoadImage } from "react-lazy-load-image-component";
 import darkTheme from "./assets/images/dark-code.jpg";
 import lightTheme from "./assets/images/light-code.jpg";
 import Project from "./components/Project";
@@ -48,15 +47,12 @@ const App = () => {
     <>
       <ThemeProvider theme={themeType}>
         <CssBaseline />
-        <Parallax blur={2} strength={500}>
-          <Background>
-            <LazyLoadImage
-              className="parallaxImage"
-              src={themeType.palette.type === "dark" ? darkTheme : lightTheme}
-              alt="sunset-parallex"
-              effect="blur"
-            />
-          </Background>
+        <Parallax
+          blur={2}
+          strength={500}
+          bgImage={themeType.palette.type === "dark" ? darkTheme : lightTheme}
+          bgImageAlt="sunset-parallex"
+        >
           <NavigationComponent
             onClickMe={scrollToMe}
             onClickWork={scrollToWork}
