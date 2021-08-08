@@ -6,6 +6,7 @@ import TableContainer from "@material-ui/core/TableContainer";
 import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
 import { Parallax } from "react-parallax";
+import LazyLoad from "react-lazyload";
 import sunsetParallex from "../assets/images/apple.jpg";
 import { makeStyles } from "@material-ui/core/styles";
 import clsx from "clsx";
@@ -132,142 +133,145 @@ const EducationComponent = (props) => {
   const classes = useStyles();
 
   return (
-    <Parallax
-      bgImage={sunsetParallex}
-      bgImageAlt="sunset-parallex"
-      strength={500}
-      blur={4}
-    >
-      <div className={classes.pageTwo}>
-        <h1 className={classes.header}>// Education</h1>
-        <div className={classes.educationContent}>
-          <p>
-            I completed {rows[0].course} from the {rows[0].collageName}{" "}
-            affiliated to {rows[0].universityName} with an aggregate of{" "}
-            {rows[0].aggregate} in the year {rows[0].yearOfPassing}.
-          </p>
-          <p>
-            In the year {rows[1].yearOfPassing}, I completed {rows[1].course} in{" "}
-            {rows[1].domain} from the {rows[1].collageName} affiliated to{" "}
-            {rows[1].universityName} with an aggregate of {rows[1].aggregate}.
-          </p>
-          <p>
-            In the year {rows[2].yearOfPassing}, I pursued {rows[2].course} in{" "}
-            {rows[2].domain} domain from the {rows[2].collageName} affiliated to{" "}
-            {rows[2].universityName} with an aggregate of {rows[2].aggregate}.
-          </p>
-        </div>
-        <div className={classes.tableContainer}>
-          <div className={classes.tableContent}>
+    <LazyLoad>
+      <Parallax
+        bgImage={sunsetParallex}
+        bgImageAlt="sunset-parallex"
+        strength={500}
+        blur={4}
+      >
+        <div className={classes.pageTwo}>
+          <h1 className={classes.header}>// Education</h1>
+          <div className={classes.educationContent}>
             <p>
-              I pursued Bachelors in {rows[2].domain} with an overall GPA of{" "}
+              I completed {rows[0].course} from the {rows[0].collageName}{" "}
+              affiliated to {rows[0].universityName} with an aggregate of{" "}
+              {rows[0].aggregate} in the year {rows[0].yearOfPassing}.
+            </p>
+            <p>
+              In the year {rows[1].yearOfPassing}, I completed {rows[1].course}{" "}
+              in {rows[1].domain} from the {rows[1].collageName} affiliated to{" "}
+              {rows[1].universityName} with an aggregate of {rows[1].aggregate}.
+            </p>
+            <p>
+              In the year {rows[2].yearOfPassing}, I pursued {rows[2].course} in{" "}
+              {rows[2].domain} domain from the {rows[2].collageName} affiliated
+              to {rows[2].universityName} with an aggregate of{" "}
               {rows[2].aggregate}.
             </p>
-            <p>
-              In Bachelor I started to gain interest on programming. First I
-              started with C language. Subjects like Digital Electrons,
-              Information Theory, Communications Systems & so on helped.
-            </p>
           </div>
-          <TableContainer>
-            <Table size="medium">
-              <TableHead>
-                <TableRow>
-                  <TableCell
-                    className={clsx(classes.headerCell, classes.cell)}
-                    align="left"
-                  >
-                    Course
-                  </TableCell>
-                  <TableCell
-                    className={clsx(
-                      classes.headerCell,
-                      classes.cell,
-                      classes.xsHideCell
-                    )}
-                    align="left"
-                  >
-                    Domain
-                  </TableCell>
-                  <TableCell
-                    className={clsx(
-                      classes.headerCell,
-                      classes.cell,
-                      classes.xsHideCell
-                    )}
-                    align="left"
-                  >
-                    College Name
-                  </TableCell>
-                  <TableCell
-                    className={clsx(
-                      classes.headerCell,
-                      classes.cell,
-                      classes.smHideCell
-                    )}
-                    align="left"
-                  >
-                    University Name
-                  </TableCell>
-                  <TableCell
-                    className={clsx(classes.headerCell, classes.cell)}
-                    align="center"
-                  >
-                    Aggregate
-                  </TableCell>
-                  <TableCell
-                    className={clsx(classes.headerCell, classes.cell)}
-                    align="center"
-                  >
-                    Year of Passing
-                  </TableCell>
-                </TableRow>
-              </TableHead>
-              <TableBody>
-                {rows.map((row) => (
-                  <TableRow key={row.course}>
-                    <TableCell className={classes.cell} align="left">
-                      {row.course}
-                    </TableCell>
+          <div className={classes.tableContainer}>
+            <div className={classes.tableContent}>
+              <p>
+                I pursued Bachelors in {rows[2].domain} with an overall GPA of{" "}
+                {rows[2].aggregate}.
+              </p>
+              <p>
+                In Bachelor I started to gain interest on programming. First I
+                started with C language. Subjects like Digital Electrons,
+                Information Theory, Communications Systems & so on helped.
+              </p>
+            </div>
+            <TableContainer>
+              <Table size="medium">
+                <TableHead>
+                  <TableRow>
                     <TableCell
-                      className={clsx(classes.cell, classes.xsHideCell)}
+                      className={clsx(classes.headerCell, classes.cell)}
                       align="left"
                     >
-                      {row.domain}
+                      Course
                     </TableCell>
                     <TableCell
-                      className={clsx(classes.cell, classes.xsHideCell)}
+                      className={clsx(
+                        classes.headerCell,
+                        classes.cell,
+                        classes.xsHideCell
+                      )}
                       align="left"
                     >
-                      {row.collegeName}
+                      Domain
                     </TableCell>
                     <TableCell
-                      className={clsx(classes.cell, classes.smHideCell)}
+                      className={clsx(
+                        classes.headerCell,
+                        classes.cell,
+                        classes.xsHideCell
+                      )}
                       align="left"
                     >
-                      {row.universityName}
+                      College Name
                     </TableCell>
-                    <TableCell className={classes.cell} align="center">
-                      {row.aggregate}
+                    <TableCell
+                      className={clsx(
+                        classes.headerCell,
+                        classes.cell,
+                        classes.smHideCell
+                      )}
+                      align="left"
+                    >
+                      University Name
                     </TableCell>
-                    <TableCell className={classes.cell} align="center">
-                      {row.yearOfPassing}
+                    <TableCell
+                      className={clsx(classes.headerCell, classes.cell)}
+                      align="center"
+                    >
+                      Aggregate
+                    </TableCell>
+                    <TableCell
+                      className={clsx(classes.headerCell, classes.cell)}
+                      align="center"
+                    >
+                      Year of Passing
                     </TableCell>
                   </TableRow>
-                ))}
-              </TableBody>
-            </Table>
-          </TableContainer>
+                </TableHead>
+                <TableBody>
+                  {rows.map((row) => (
+                    <TableRow key={row.course}>
+                      <TableCell className={classes.cell} align="left">
+                        {row.course}
+                      </TableCell>
+                      <TableCell
+                        className={clsx(classes.cell, classes.xsHideCell)}
+                        align="left"
+                      >
+                        {row.domain}
+                      </TableCell>
+                      <TableCell
+                        className={clsx(classes.cell, classes.xsHideCell)}
+                        align="left"
+                      >
+                        {row.collegeName}
+                      </TableCell>
+                      <TableCell
+                        className={clsx(classes.cell, classes.smHideCell)}
+                        align="left"
+                      >
+                        {row.universityName}
+                      </TableCell>
+                      <TableCell className={classes.cell} align="center">
+                        {row.aggregate}
+                      </TableCell>
+                      <TableCell className={classes.cell} align="center">
+                        {row.yearOfPassing}
+                      </TableCell>
+                    </TableRow>
+                  ))}
+                </TableBody>
+              </Table>
+            </TableContainer>
+          </div>
+          <div className={classes.hobbies}>
+            <h3>Hobbies</h3>
+            <p>
+              I am amateur Photographer. I love Travelling & Hiking. All
+              together makes me to explore exotic locations.
+            </p>
+          </div>
         </div>
-        <div className={classes.hobbies}>
-          <h3>Hobbies</h3>
-          <p>
-            I am amateur Photographer. I love Travelling & Hiking. All together
-            makes me to explore exotic locations.
-          </p>
-        </div>
-      </div>
-    </Parallax>
+      </Parallax>
+    </LazyLoad>
   );
 };
 

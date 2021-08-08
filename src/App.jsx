@@ -11,6 +11,7 @@ import ThemeProvider from "@material-ui/styles/ThemeProvider";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import { createTheme } from "@material-ui/core/styles";
 import { Parallax } from "react-parallax";
+import LazyLoad from "react-lazyload";
 import darkTheme from "./assets/images/dark-code.jpg";
 import lightTheme from "./assets/images/light-code.jpg";
 import Project from "./components/Project";
@@ -48,22 +49,24 @@ const App = () => {
     <>
       <ThemeProvider theme={themeType}>
         <CssBaseline />
-        <Parallax
-          blur={2}
-          bgImage={themeType.palette.type === "dark" ? darkTheme : lightTheme}
-          bgImageAlt="sunset-parallex"
-          strength={500}
-        >
-          <NavigationComponent
-            onClickMe={scrollToMe}
-            onClickWork={scrollToWork}
-            toggleTheme={toggleTheme}
-          />
-          <HelloComponent
-            onClickMe={scrollToMe}
-            theme={themeType.palette.type}
-          />
-        </Parallax>
+        <LazyLoad>
+          <Parallax
+            blur={2}
+            bgImage={themeType.palette.type === "dark" ? darkTheme : lightTheme}
+            bgImageAlt="sunset-parallex"
+            strength={500}
+          >
+            <NavigationComponent
+              onClickMe={scrollToMe}
+              onClickWork={scrollToWork}
+              toggleTheme={toggleTheme}
+            />
+            <HelloComponent
+              onClickMe={scrollToMe}
+              theme={themeType.palette.type}
+            />
+          </Parallax>
+        </LazyLoad>
         <ProfileComponent refProp={meRefs} />
         <EducationComponent />
         <WorkComponent refProp={workRefs} />
