@@ -6,7 +6,6 @@ import ProfileComponent from "./components/Profile";
 import EducationComponent from "./components/Education";
 import WorkComponent from "./components/Work";
 import ContactComponent from "./components/ContactComponent";
-
 import ThemeProvider from "@material-ui/styles/ThemeProvider";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import { createTheme } from "@material-ui/core/styles";
@@ -15,7 +14,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import darkTheme from "./assets/images/dark-code.jpg";
 import lightTheme from "./assets/images/light-code.jpg";
 import Project from "./components/Project";
-import 'react-lazy-load-image-component/src/effects/blur.css';
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 const App = () => {
   const meRefs = React.createRef();
@@ -28,7 +27,6 @@ const App = () => {
   });
 
   const [themeType, setTheme] = useState(theme);
-  const [background, setBackground] = useState("dark");
 
   const scrollToMe = () => {
     window.scrollTo(0, meRefs.current.offsetTop);

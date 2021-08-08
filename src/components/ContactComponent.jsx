@@ -13,8 +13,6 @@ import {
 } from "react-share";
 import SendIcon from "@material-ui/icons/Send";
 import Snackbar from "@material-ui/core/Snackbar";
-import IconButton from "@material-ui/core/IconButton";
-import CloseIcon from "@material-ui/icons/Close";
 import Axios from "axios";
 import MuiAlert from "@material-ui/lab/Alert";
 import { Button, Input, TextField } from "@material-ui/core";

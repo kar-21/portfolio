@@ -40,6 +40,11 @@ const useStyles = makeStyles((theme) => ({
   card: {
     width: "16.5rem",
     height: "100%",
+    backgroundColor:
+      theme.palette.type === "dark" ? "rgb(0,0,0,0.6)" : "rgb(255,255,255,0.6)",
+    "&:hover": {
+      transform: "scale(1.05)",
+    },
   },
   cardHeader: {
     textAlign: "center",
