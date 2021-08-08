@@ -10,11 +10,12 @@ import ContactComponent from "./components/ContactComponent";
 import ThemeProvider from "@material-ui/styles/ThemeProvider";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import { createTheme } from "@material-ui/core/styles";
-import { Parallax } from "react-parallax";
-import LazyLoad from "react-lazyload";
+import { Parallax, Background } from "react-parallax";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import darkTheme from "./assets/images/dark-code.jpg";
 import lightTheme from "./assets/images/light-code.jpg";
 import Project from "./components/Project";
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const App = () => {
   const meRefs = React.createRef();
@@ -49,24 +50,25 @@ const App = () => {
     <>
       <ThemeProvider theme={themeType}>
         <CssBaseline />
-        <LazyLoad>
-          <Parallax
-            blur={2}
-            bgImage={themeType.palette.type === "dark" ? darkTheme : lightTheme}
-            bgImageAlt="sunset-parallex"
-            strength={500}
-          >
-            <NavigationComponent
-              onClickMe={scrollToMe}
-              onClickWork={scrollToWork}
-              toggleTheme={toggleTheme}
+        <Parallax blur={2} strength={500}>
+          <Background>
+            <LazyLoadImage
+              className="parallaxImage"
+              src={themeType.palette.type === "dark" ? darkTheme : lightTheme}
+              alt="sunset-parallex"
+              effect="blur"
             />
-            <HelloComponent
-              onClickMe={scrollToMe}
-              theme={themeType.palette.type}
-            />
-          </Parallax>
-        </LazyLoad>
+          </Background>
+          <NavigationComponent
+            onClickMe={scrollToMe}
+            onClickWork={scrollToWork}
+            toggleTheme={toggleTheme}
+          />
+          <HelloComponent
+            onClickMe={scrollToMe}
+            theme={themeType.palette.type}
+          />
+        </Parallax>
         <ProfileComponent refProp={meRefs} />
         <EducationComponent />
         <WorkComponent refProp={workRefs} />
