@@ -5,10 +5,10 @@ import CardContent from "@material-ui/core/CardContent";
 import CardHeader from "@material-ui/core/CardHeader";
 import { Parallax } from "react-parallax";
 
-import BattleShipImage from "../assets/images/battle-ship.png";
-import AirlineManagementImage from "../assets/images/airline-management.png";
-import CovidTrackerImage from "../assets/images/covid-tracker.png";
-import ShoppingListImage from "../assets/images/shopping-list.png";
+import BattleShipImage from "../assets/images/battle-ship.jpg";
+import AirlineManagementImage from "../assets/images/airline-management.jpg";
+import CovidTrackerImage from "../assets/images/covid-tracker.jpg";
+import ShoppingListImage from "../assets/images/shopping-list.jpg";
 import CameraImage from "../assets/images/camera.jpg";
 
 const useStyles = makeStyles((theme) => ({
@@ -75,12 +75,17 @@ const Project = (props) => {
         <a
           href="https://battleship-p5.netlify.app"
           target="_blank"
+          rel="noopener noreferrer"
           className={classes.href}
         >
           <Card className={classes.card}>
             <CardHeader className={classes.cardHeader} title="Battle Ship" />
             <CardContent className={classes.cardContent}>
-              <img className={classes.projectImage} src={BattleShipImage} />
+              <img
+                className={classes.projectImage}
+                src={BattleShipImage}
+                alt="battle-ship"
+              />
               <p>
                 An interactive web based PvE game where player forms a navy
                 fleet with help of 7 ships and compete against bot build using
@@ -92,6 +97,7 @@ const Project = (props) => {
         <a
           href="https://ng-airline-mgmt.netlify.app"
           target="_blank"
+          rel="noopener noreferrer"
           className={classes.href}
         >
           <Card className={classes.card}>
@@ -103,6 +109,7 @@ const Project = (props) => {
               <img
                 className={classes.projectImage}
                 src={AirlineManagementImage}
+                alt="airline-management"
               />
               <p>
                 A system for staffs & admin to manage passengers while check-in
@@ -115,6 +122,7 @@ const Project = (props) => {
         <a
           href="https://covid19-react-kk.netlify.app"
           target="_blank"
+          rel="noopener noreferrer"
           className={classes.href}
         >
           <Card className={classes.card}>
@@ -123,7 +131,11 @@ const Project = (props) => {
               title="Covid-19 tracker"
             />
             <CardContent className={classes.cardContent}>
-              <img className={classes.projectImage} src={CovidTrackerImage} />
+              <img
+                className={classes.projectImage}
+                src={CovidTrackerImage}
+                alt="covid-tracker"
+              />
               <p>
                 A tracker to display number of Covid cases in India built using
                 React and D3.js.The data is fetched from open source API and it
@@ -136,12 +148,17 @@ const Project = (props) => {
         <a
           href="https://rx-shopping-list.netlify.app"
           target="_blank"
+          rel="noopener noreferrer"
           className={classes.href}
         >
           <Card className={classes.card}>
             <CardHeader className={classes.cardHeader} title="Shopping List" />
             <CardContent className={classes.cardContent}>
-              <img className={classes.projectImage} src={ShoppingListImage} />
+              <img
+                className={classes.projectImage}
+                src={ShoppingListImage}
+                alt="shopping-list"
+              />
               <p>
                 A web app help to prepare shopping list with required quantity
                 and downloads the list prepare. This is built using React &

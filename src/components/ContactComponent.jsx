@@ -17,7 +17,11 @@ import Axios from "axios";
 import MuiAlert from "@material-ui/lab/Alert";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faAsterisk } from "@fortawesome/free-solid-svg-icons";
-import { faLinkedinIn, faGithub, faHackerrank } from "@fortawesome/free-brands-svg-icons";
+import {
+  faLinkedinIn,
+  faGithub,
+  faHackerrank,
+} from "@fortawesome/free-brands-svg-icons";
 import { Button, Input, TextField } from "@material-ui/core";
 import { useState } from "react";
 
@@ -96,6 +100,9 @@ const useStyles = makeStyles((theme) => ({
     margin: "3px",
     width: "30px",
     height: "30px",
+  },
+  lastHeader: {
+    fontWeight: "600",
   },
 }));
 
@@ -238,6 +245,7 @@ const ContactComponent = (props) => {
             className={clsx(classes.href, classes.link)}
             href="https://mail.google.com/mail/u"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <FontAwesomeIcon icon={faEnvelope} />
             <span className={classes.contact}> karthiks210198@gmail.com</span>
@@ -246,6 +254,7 @@ const ContactComponent = (props) => {
             className={clsx(classes.href, classes.link)}
             href="https://github.com/kar-21"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <FontAwesomeIcon icon={faGithub} />
             <span className={classes.contact}> @ kar-21</span>
@@ -254,6 +263,7 @@ const ContactComponent = (props) => {
             className={clsx(classes.href, classes.link)}
             href="https://www.hackerrank.com/karthiksrikanth?hr_r=1"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <FontAwesomeIcon icon={faHackerrank} />
             <span className={classes.contact}> karthiksrikanth</span>
@@ -262,6 +272,7 @@ const ContactComponent = (props) => {
             className={clsx(classes.href, classes.link)}
             href="https://editor.p5js.org/karthiks210198"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <FontAwesomeIcon icon={faAsterisk} />
             <span className={classes.contact}> karthiks210198</span>
@@ -275,7 +286,7 @@ const ContactComponent = (props) => {
       >
         <div className={classes.shareSocialMedia}>
           <div>
-            <h5>Share this Website</h5>
+            <div className={classes.lastHeader}>Share this Website</div>
             <FacebookShareButton url={shareUrl}>
               <FacebookIcon className={classes.iconStyle} />
             </FacebookShareButton>
@@ -290,9 +301,9 @@ const ContactComponent = (props) => {
             </EmailShareButton>
           </div>
           <div className={classes.credits}>
-            <h5>&#169; Copyright 2020</h5>
+            <div className={classes.lastHeader}>&#169; Copyright 2021</div>
             <p className={classes.creditsGoogle}>
-              This website is hosted in firebase.
+              This website is made with React.js
             </p>
           </div>
         </div>

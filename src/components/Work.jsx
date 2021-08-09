@@ -40,8 +40,9 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     alignItems: "baseline",
   },
-  h4: {
+  h3: {
     marginLeft: "2%",
+    fontSize: "0.9rem",
   },
   content: {
     width: "90%",
@@ -67,7 +68,7 @@ const useStyles = makeStyles((theme) => ({
   cell: {
     display: "flex",
     flexDirection: "column",
-    color: "grey",
+    color: theme.palette.type === "dark" ? "#bbb" : "444",
     width: "fit-content",
     alignItems: "center",
     margin: "2%",
@@ -86,8 +87,8 @@ const WorkComponent = (props) => {
       <h1 className={classes.header}>// Work</h1>
       <div className={classes.introduction}>
         <div className={classes.companyHeader}>
-          <h2>Mindtree Ltd.</h2>
-          <h4 className={classes.h4}>[ 2019 - Present ]</h4>
+          <h2>Mindtree Ltd.</h2>{" "}
+          <h3 className={classes.h3}>[ 2019 - Present ]</h3>
         </div>
         <div className={classes.content}>
           <ul className={classes.padding}>

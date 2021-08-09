@@ -81,6 +81,9 @@ const useStyles = makeStyles((theme) => ({
       fontSize: "0.9rem",
     },
   },
+  hobbiesHeader: {
+    fontSize: "1.17em",
+  },
 }));
 
 const createData = (
@@ -260,7 +263,7 @@ const EducationComponent = (props) => {
           </TableContainer>
         </div>
         <div className={classes.hobbies}>
-          <h3>Hobbies</h3>
+          <h2 className={classes.hobbiesHeader}>Hobbies</h2>
           <p>
             I am amateur Photographer. I love Travelling & Hiking. All together
             makes me to explore exotic locations.
