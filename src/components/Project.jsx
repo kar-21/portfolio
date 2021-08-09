@@ -3,7 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import CardHeader from "@material-ui/core/CardHeader";
-import { Parallax, Background } from "react-parallax";
+import { Parallax } from "react-parallax";
 
 import BattleShipImage from "../assets/images/battle-ship.png";
 import AirlineManagementImage from "../assets/images/airline-management.png";

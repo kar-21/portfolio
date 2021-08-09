@@ -1,5 +1,19 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faRocket, faDatabase } from "@fortawesome/free-solid-svg-icons";
+import {
+  faHtml5,
+  faCss3Alt,
+  faJs,
+  faSass,
+  faAngular,
+  faNodeJs,
+  faReact,
+  faNpm,
+  faYarn,
+  faGithub,
+} from "@fortawesome/free-brands-svg-icons";
 
 const useStyles = makeStyles((theme) => ({
   pageThree: {
@@ -117,51 +131,51 @@ const WorkComponent = (props) => {
         <h2>Technologies Stack</h2>
         <div className={classes.grid}>
           <div className={classes.cell}>
-            <i className="fab fa-html5 fa-4x"></i>
+            <FontAwesomeIcon size="4x" icon={faHtml5} />
             <span>HTML-5</span>
           </div>
           <div className={classes.cell}>
-            <i className="fab fa-css3-alt fa-4x"></i>
+            <FontAwesomeIcon size="4x" icon={faCss3Alt} />
             <span>CSS-3</span>
           </div>
           <div className={classes.cell}>
-            <i className="fab fa-js fa-4x"></i>
+            <FontAwesomeIcon size="4x" icon={faJs} />
             <span>JavaScript</span>
           </div>
           <div className={classes.cell}>
-            <i className="fab fa-sass fa-4x"></i>
+            <FontAwesomeIcon size="4x" icon={faSass} />
             <span>Sass</span>
           </div>
           <div className={classes.cell}>
-            <i className="fab fa-angular fa-4x"></i>
+            <FontAwesomeIcon size="4x" icon={faAngular} />
             <span>Angular</span>
           </div>
           <div className={classes.cell}>
-            <i className="fab fa-node fa-4x"></i>
+            <FontAwesomeIcon size="4x" icon={faNodeJs} />
             <span>Node.js</span>
           </div>
           <div className={classes.cell}>
-            <i className="fab fa-react fa-4x"></i>
+            <FontAwesomeIcon size="4x" icon={faReact} />
             <span>React.js</span>
           </div>
           <div className={classes.cell}>
-            <i className="fab fa-npm fa-4x"></i>
+            <FontAwesomeIcon size="4x" icon={faNpm} />
             <span>npm</span>
           </div>
           <div className={classes.cell}>
-            <i className="fab fa-yarn fa-4x"></i>
+            <FontAwesomeIcon size="4x" icon={faYarn} />
             <span>yarn</span>
           </div>
           <div className={classes.cell}>
-            <i className="fab fa-github fa-4x"></i>
+            <FontAwesomeIcon size="4x" icon={faGithub} />
             <span>Github</span>
           </div>
           <div className={classes.cell}>
-            <i className="fa fa-rocket fa-4x"></i>
+            <FontAwesomeIcon size="4x" icon={faRocket} />
             <span>Postman</span>
           </div>
           <div className={classes.cell}>
-            <i className="fa fa-database fa-4x"></i>
+            <FontAwesomeIcon size="4x" icon={faDatabase} />
             <span>MongoDB</span>
           </div>
         </div>

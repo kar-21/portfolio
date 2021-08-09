@@ -9,7 +9,7 @@ import ContactComponent from "./components/ContactComponent";
 import ThemeProvider from "@material-ui/styles/ThemeProvider";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import { createTheme } from "@material-ui/core/styles";
-import { Parallax, Background } from "react-parallax";
+import { Parallax } from "react-parallax";
 import darkTheme from "./assets/images/dark-code.jpg";
 import lightTheme from "./assets/images/light-code.jpg";
 import Project from "./components/Project";

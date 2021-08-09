@@ -5,7 +5,7 @@ import TableCell from "@material-ui/core/TableCell";
 import TableContainer from "@material-ui/core/TableContainer";
 import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
-import { Parallax, Background } from "react-parallax";
+import { Parallax } from "react-parallax";
 import sunsetParallex from "../assets/images/apple.jpg";
 import { makeStyles } from "@material-ui/core/styles";
 import clsx from "clsx";

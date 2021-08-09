@@ -15,6 +15,9 @@ import SendIcon from "@material-ui/icons/Send";
 import Snackbar from "@material-ui/core/Snackbar";
 import Axios from "axios";
 import MuiAlert from "@material-ui/lab/Alert";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope, faAsterisk } from "@fortawesome/free-solid-svg-icons";
+import { faLinkedinIn, faGithub, faHackerrank } from "@fortawesome/free-brands-svg-icons";
 import { Button, Input, TextField } from "@material-ui/core";
 import { useState } from "react";
 
@@ -228,7 +231,7 @@ const ContactComponent = (props) => {
             href="https://www.linkedin.com/in/karthik-s-4ba97212b/"
             target="_blank"
           >
-            <i className="fab fa-linkedin-in fa-lg"></i>
+            <FontAwesomeIcon icon={faLinkedinIn} />
             <span className={classes.contact}> karthik-s</span>
           </a>
           <a
@@ -236,7 +239,7 @@ const ContactComponent = (props) => {
             href="https://mail.google.com/mail/u"
             target="_blank"
           >
-            <i className="fa fa-envelope fa-lg"></i>
+            <FontAwesomeIcon icon={faEnvelope} />
             <span className={classes.contact}> karthiks210198@gmail.com</span>
           </a>
           <a
@@ -244,7 +247,7 @@ const ContactComponent = (props) => {
             href="https://github.com/kar-21"
             target="_blank"
           >
-            <i className="fab fa-github fa-lg"></i>
+            <FontAwesomeIcon icon={faGithub} />
             <span className={classes.contact}> @ kar-21</span>
           </a>
           <a
@@ -252,7 +255,7 @@ const ContactComponent = (props) => {
             href="https://www.hackerrank.com/karthiksrikanth?hr_r=1"
             target="_blank"
           >
-            <i className="fab fa-hackerrank fa-lg"></i>
+            <FontAwesomeIcon icon={faHackerrank} />
             <span className={classes.contact}> karthiksrikanth</span>
           </a>
           <a
@@ -260,7 +263,7 @@ const ContactComponent = (props) => {
             href="https://editor.p5js.org/karthiks210198"
             target="_blank"
           >
-            <i className="fa fa-asterisk fa-lg"></i>
+            <FontAwesomeIcon icon={faAsterisk} />
             <span className={classes.contact}> karthiks210198</span>
           </a>
         </div>
