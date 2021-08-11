@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "karthik-portfolio"
+    "default": "karthik-portfolio",
+    "karthik-s": "karthik-portfolio"
   }
 }

@@ -111,7 +111,7 @@ const Alert = (props) => {
 };
 
 const ContactComponent = (props) => {
-  const shareUrl = "https://karthik-portfolio.firebaseapp.com/";
+  const shareUrl = "https://karthik-s.in/";
   const sendMailUrl = "https://node-mailer-profile.herokuapp.com/send";
   const classes = useStyles();
   const re =
@@ -129,25 +129,22 @@ const ContactComponent = (props) => {
 
   const sendMail = () => {
     if (re.test(email)) {
-      Axios.post(
-        sendMailUrl,
-        {
-          headers: {
-            "Content-Type": "application/json",
-            "Access-Control-Allow-Origin": "*",
-          },
-        },
-        {
-          name: name,
-          sender: email,
-          message: message,
-        }
-      )
+      Axios.post(sendMailUrl, {
+        name: name,
+        sender: email,
+        message: message,
+      })
         .then((res) => {
           if (res.data.status === "Email sent") {
             setAlertMessage("E-mail Sent");
             setAlertMessageType("success");
             setOpenSnackBar(true);
+            setName("");
+            setEmail("");
+            setMessage("");
+            setNameError(false);
+            setEmailError(false);
+            setMessageError(false);
           } else {
             setAlertMessage("Error While sending E-mail");
             setAlertMessageType("error");
@@ -224,6 +221,14 @@ const ContactComponent = (props) => {
             className={classes.sendButton}
             color="secondary"
             variant="outlined"
+            disabled={
+              nameError ||
+              emailError ||
+              messageError ||
+              !name ||
+              !email ||
+              !message
+            }
             onClick={() => {
               sendMail();
             }}
