@@ -10,11 +10,11 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const skillArray = [
   { name: "JavaScript", value: 9 },
-  { name: "TypeScript", value: 8.7 },
+  { name: "TypeScript", value: 8.8 },
   { name: "Angular", value: 8.5 },
-  { name: "React.js", value: 8 },
-  { name: "Express.js", value: 7.8 },
-  { name: "Node.js", value: 7.8 },
+  { name: "React.js", value: 8.3 },
+  { name: "Express.js", value: 8 },
+  { name: "Node.js", value: 8 },
   { name: "Electron.js", value: 7.3 },
   { name: "MongoDB", value: 7 },
   { name: "P5.js", value: 6 },
@@ -22,7 +22,7 @@ const skillArray = [
 
 const useStyles = makeStyles((theme) => ({
   pageOne: {
-    height: "100vh",
+    // height: "100vh",
     display: "flex",
     flexDirection: "column",
   },

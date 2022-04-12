@@ -167,9 +167,10 @@ const EducationComponent = (props) => {
               {rows[2].aggregate}.
             </p>
             <p>
-              In Bachelor I started to gain interest on programming. First I
-              started with C language. Subjects like Digital Electrons,
-              Information Theory, Communications Systems & so on helped.
+              In my bachelor's, I started to gain an interest in programming. At
+              first, I started with the C language. Subjects like Digital
+              Electronics, Information Theory, Communications Systems & so on
+              helped to shape my Critical thinking.
             </p>
           </div>
           <TableContainer>

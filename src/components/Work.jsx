@@ -5,7 +5,6 @@ import { faRocket, faDatabase } from "@fortawesome/free-solid-svg-icons";
 import {
   faHtml5,
   faCss3Alt,
-  faJs,
   faSass,
   faAngular,
   faNodeJs,
@@ -14,6 +13,7 @@ import {
   faYarn,
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
+import { SiRedux, SiJavascript, SiTypescript } from "react-icons/si";
 
 const useStyles = makeStyles((theme) => ({
   pageThree: {
@@ -77,6 +77,10 @@ const useStyles = makeStyles((theme) => ({
       opacity: "0.65",
     },
   },
+  icon: {
+    width: "56px",
+    height: "56px",
+  },
 }));
 
 const WorkComponent = (props) => {
@@ -87,43 +91,73 @@ const WorkComponent = (props) => {
       <h1 className={classes.header}>// Work</h1>
       <div className={classes.introduction}>
         <div className={classes.companyHeader}>
-          <h2>Mindtree Ltd.</h2>{" "}
-          <h3 className={classes.h3}>[ 2019 - Present ]</h3>
+          <h2>Mindtree</h2>
+          <h3 className={classes.h3}>[ 2019 - 2021 ]</h3>
         </div>
         <div className={classes.content}>
           <ul className={classes.padding}>
             <li>
-              Joined company as a fresher and got hand full of experience in
+              Joined company as a fresher and got a hand full of experience in
               MEAN stack.
             </li>
             <li>
               Applying analytical skills to the problem-solving process and
-              developed ability to learn quickly.
+              developing the ability to learn quickly.
             </li>
             <li>
-              Creating generic components, following best practices, Jira & Git
+              Worked on Angular, Electron.js, Node.js, and Express.js in the
+              project. Explored a new JavaScript library/framework and excel in
+              understanding it in a short time.
+            </li>
+            <li>
+              Created generic components, following best practices, Jira & Git
               Process.
             </li>
             <li>
-              Worked on Angular, Electron.js, P5.js, Fabric.js in the project.
-              Explored new JavaScript library/framework and excel in
-              understanding it in short time.
+              Delivered all the features, tasks, and defects assigned in time
+              and delivered the Complex features involving lots of analytical
+              thinking.
             </li>
             <li>
-              Delivering the Complex features involving lots of analytical
-              thinking and capturing live camera stream with the help of native
-              APIs.
+              Believed in teamwork and cooperation to overcome any obstacle and
+              be open to feedback.
             </li>
             <li>
-              Delivering all the features, tasks and defects assigned in time.
+              Climbing a steep learning curve including increasing acquired
+              skills and acquiring new skills and knowledge on tools and
+              technologies.
             </li>
             <li>
-              Believe in teamwork and cooperation to overcome any obstacle and
-              being open to feedback.
+              Received 5 individual recognition awards including Master Mind and
+              Hats Off and 3 team recognition awards including the CREST Team
+              award.
+            </li>
+          </ul>
+        </div>
+        <div className={classes.companyHeader}>
+          <h2>Accenture</h2>
+          <h3 className={classes.h3}>[ 2021 - Present ]</h3>
+        </div>
+        <div className={classes.content}>
+          <ul className={classes.padding}>
+            <li>
+              Worked on React, Redux, and TypeScript in the project. Explored
+              and integrated micro frontend in the project.
             </li>
             <li>
-              Climbing steep learning curve including increasing acquired skill
-              and acquiring new skill and knowledge on tools and technologies
+              Worked on state management using Redux & persisting the Redux
+              states.
+            </li>
+            <li>
+              Created generic components, following best practices, Jira & Git
+              Process.
+            </li>
+            <li>
+              Written the unit tests for the developed code and covered 85% of
+              the code.
+            </li>
+            <li>
+              Delivered all the features, tasks, and defects assigned in time.
             </li>
           </ul>
         </div>
@@ -140,12 +174,16 @@ const WorkComponent = (props) => {
             <span>CSS-3</span>
           </div>
           <div className={classes.cell}>
-            <FontAwesomeIcon size="4x" icon={faJs} />
+            <SiJavascript className={classes.icon} />
             <span>JavaScript</span>
           </div>
           <div className={classes.cell}>
             <FontAwesomeIcon size="4x" icon={faSass} />
             <span>Sass</span>
+          </div>
+          <div className={classes.cell}>
+            <SiTypescript className={classes.icon} />
+            <span>TypeScript</span>
           </div>
           <div className={classes.cell}>
             <FontAwesomeIcon size="4x" icon={faAngular} />
@@ -158,6 +196,10 @@ const WorkComponent = (props) => {
           <div className={classes.cell}>
             <FontAwesomeIcon size="4x" icon={faReact} />
             <span>React.js</span>
+          </div>
+          <div className={classes.cell}>
+            <SiRedux className={classes.icon} />
+            <span>Redux</span>
           </div>
           <div className={classes.cell}>
             <FontAwesomeIcon size="4x" icon={faNpm} />
