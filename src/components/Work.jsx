@@ -128,41 +128,41 @@ const WorkComponent = (props) => {
           <div className={classes.content}>
             <ul className={classes.padding}>
               <li>
-                Joined the company as a fresher and got a hand full of
-                experience in MEAN stack
+                Joined the company as a fresher and gained a hand full of
+                experience in the MEAN stack.
               </li>
               <li>
-                Applying my analytical skills to the problem-solving process and
-                developing the ability to learn quickly.
+                I used my analytical skills to tackle problems and honored my
+                ability to pick things up quickly.
               </li>
               <li>
-                Worked on Angular, Electron.js, Node.js, and Express.js.
-                Explored new JavaScript library/framework and excelled in
-                understanding it in a short time.
+                Worked with Angular, Electron.js, Node.js, and Express.js. I
+                explored a new JS library/framework and excelled in using it in
+                a short time.
               </li>
               <li>
-                Implemented features with canvas libraries such as P5.js &
-                Fabric and worked on Web APIs such as Media Devices and
+                Implemented features with canvas libraries such as P5.js and
+                Fabric and worked on web APIs such as Media Devices and
                 Navigator.
               </li>
               <li>
                 Delivered all the features, tasks, and defects assigned on time.
-                I delivered the Complex features involving bunches of analytical
+                I delivered the complex features involving lots of analytical
                 thinking.
               </li>
               <li>
-                Creating generic components, following best practices, Jira, and
-                Git Process is my routine.
+                My routine involves creating generic components, adhering to
+                best practices, Jira, and Git procedures.
               </li>
               <li>
-                Climbing steep learning curve including increasing acquired
-                skills and acquiring new skills and knowledge on tools and
-                technologies.
+                Climbing steep learning curve including developing acquired
+                skills as well as acquiring new skills and knowledge on tools
+                and technologies.
               </li>
               <li>
-                Received 5 individual recognition awards together with Master
-                Mind & Hats Off and 3 team recognition awards together with the
-                CREST Team award.
+                Received 5 individual recognitions together with Master Mind &
+                Hats Off and 3 team recognitions together with the CREST Team
+                award.
               </li>
             </ul>
           </div>
@@ -174,8 +174,8 @@ const WorkComponent = (props) => {
             <ul className={classes.padding}>
               <li>
                 Worked on React, Redux, Node, and TypeScript in the project.
-                Worked on state management using Redux & persisting and caching
-                the Redux states.
+                Worked on state management using Redux and persisting and
+                caching the Redux states.
               </li>
               <li>
                 Explored and worked on micro frontend integration with concepts
@@ -188,21 +188,21 @@ const WorkComponent = (props) => {
                 applications.
               </li>
               <li>
-                Have a bit of exposure to the redux tool kit, react native, and
-                SVG chart libraries like D3.js, Recharts, Victory charts, and
-                Redux toolkit.
+                Be familiar with SVG chart libraries like D3.js, Recharts, and
+                Victory Charts, as well as the redux tool kit, and react native.
               </li>
               <li>
-                Written the unit tests in Jest for over 90% of the code
-                developed. Followed best practices to uphold code quality.
+                More than 90% of the developed code has unit tests that were
+                written in Jest. used best practices to maintain the integrity
+                of the code.
               </li>
               <li>
                 Developed strong debugging and problem-solving skills by
-                strengthening my analytical skills.
+                strengthening my analytical skills
               </li>
               <li>
-                Assisted my peers with the functionalities, logic, and
-                requirements when they are blocked.
+                Assisted my peers when they were stuck by explaining the logic,
+                requirements, and functionalities.
               </li>
               <li>
                 Received 4 individual recognitions together with the iChamp

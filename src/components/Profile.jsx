@@ -55,11 +55,11 @@ const useStyles = makeStyles((theme) => ({
   profileImageContentContainer: {
     display: "none",
     [theme.breakpoints.down("xs")]: {
-      display: "block"
-    }
+      display: "block",
+    },
   },
   profileImageContent: {
-    width: "100%"
+    width: "100%",
   },
   profileImageContainer: {
     width: "50%",
@@ -154,17 +154,21 @@ const Profile = (props) => {
       <div className={classes.meContent}>
         <div className={classes.content}>
           <p>
-            I am a Full Stack JavaScript Developer. I am Critical Thinker, Quick
-            Learner and Creative. I am passionate to acquire new skills.
+            I am a Full Stack JavaScript Developer, an enthusiastic learner, a
+            critical thinker, and passionate about acquiring new skills.
           </p>
           <div className={classes.profileImageContentContainer}>
-            <img className={classes.profileImageContent} src={profileImage} alt="" />
+            <img
+              className={classes.profileImageContent}
+              src={profileImage}
+              alt=""
+            />
           </div>
           <p>
-            As a Full Stack Developer, I am proficient in JavaScript. I am
-            passionate about new technologies and software development. I have
-            fair knowledge in JavaScript and Typescript and I worked on their
-            frameworks and libraries.
+            As a Full Stack JavaScript and Typescript Developer. I worked on a
+            cross-platform application involving various JS libraries and
+            frameworks such as React, Angular, Electron.js, and Node.js. I am
+            passionate about new technologies and software development.
           </p>
           <SkillArrayMapped />
         </div>
