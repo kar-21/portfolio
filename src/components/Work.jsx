@@ -141,6 +141,11 @@ const WorkComponent = (props) => {
                 understanding it in a short time.
               </li>
               <li>
+                Implemented features with canvas libraries such as P5.js &
+                Fabric and worked on Web APIs such as Media Devices and
+                Navigator.
+              </li>
+              <li>
                 Delivered all the features, tasks, and defects assigned on time.
                 I delivered the Complex features involving bunches of analytical
                 thinking.
@@ -168,14 +173,19 @@ const WorkComponent = (props) => {
           <div className={classes.content}>
             <ul className={classes.padding}>
               <li>
-                Worked on React, Redux, and TypeScript in the project. Worked on
-                state management using Redux & persisting and caching the Redux
-                states.
+                Worked on React, Redux, Node, and TypeScript in the project.
+                Worked on state management using Redux & persisting and caching
+                the Redux states.
               </li>
               <li>
                 Explored and worked on micro frontend integration with concepts
                 like Lerna & single spa that help in a shared library and
                 cross-platform application development.
+              </li>
+              <li>
+                Implemented micro frontend and reusability of source code using
+                the concepts of Lerna & single-SPA. Worked on cross-platform
+                applications.
               </li>
               <li>
                 Have a bit of exposure to the redux tool kit, react native, and
@@ -196,7 +206,7 @@ const WorkComponent = (props) => {
               </li>
               <li>
                 Received 4 individual recognitions together with the iChamp
-                award.
+                award and Stewardship.
               </li>
             </ul>
           </div>
