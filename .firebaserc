@@ -1,6 +1,9 @@
 {
   "projects": {
     "default": "karthik-portfolio",
-    "karthik-s": "karthik-portfolio"
-  }
+    "karthik-s": "karthik-portfolio",
+    "portfolio": "karthik-portfolio"
+  },
+  "targets": {},
+  "etags": {}
 }

@@ -63,7 +63,7 @@ const App = () => {
         </Parallax>
         <ProfileComponent refProp={meRefs} />
         <EducationComponent />
-        <WorkComponent refProp={workRefs} />
+        <WorkComponent refProp={workRefs} theme={themeType.palette.type} />
         <Project />
         <ContactComponent theme={themeType.palette.type} />
       </ThemeProvider>

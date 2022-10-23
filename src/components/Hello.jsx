@@ -15,9 +15,10 @@ const useStyles = makeStyles((theme) => ({
   helloContainer: {
     width: "100%",
     height: "calc(100vh - 60px)",
-    margin: "auto",
     display: "flex",
     flexDirection: "column",
+    justifyContent: "space-evenly",
+    alignItems: "center",
   },
   smileDark: {
     color: "yellow",
@@ -34,7 +35,6 @@ const useStyles = makeStyles((theme) => ({
   },
   helloDiv: {
     width: "80%",
-    margin: "auto",
     fontSize: "2.35rem",
     padding: "2.5rem 0px",
     [theme.breakpoints.down("sm")]: {
@@ -52,7 +52,6 @@ const useStyles = makeStyles((theme) => ({
   },
   scroll: {
     width: "70%",
-    margin: "auto",
     display: "flex",
   },
 }));
@@ -81,9 +80,9 @@ const HelloComponent = (props) => {
   return (
     <div className={classes.helloContainer}>
       <div className={classes.helloDiv}>
+        <h1>Hello! - I am Karthik.</h1>
         <h1>
-          Hello! - I am Karthik. FullStack JavaScript Developer based in
-          Bengaluru, India{" "}
+          FullStack JavaScript Developer based in Bengaluru, India{" "}
           <span
             className={
               props.theme === "dark" ? classes.smileDark : classes.smileLight
