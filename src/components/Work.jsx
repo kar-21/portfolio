@@ -173,14 +173,9 @@ const WorkComponent = (props) => {
           <div className={classes.content}>
             <ul className={classes.padding}>
               <li>
-                Worked on React, Redux, Node, and TypeScript in the project.
-                Worked on state management using Redux and persisting and
-                caching the Redux states.
-              </li>
-              <li>
-                Explored and worked on micro frontend integration with concepts
-                like Lerna & single spa that help in a shared library and
-                cross-platform application development.
+                Worked on React, Node, and TypeScript. Worked on state
+                management using Redux along with persisting and caching the
+                Redux states.
               </li>
               <li>
                 Implemented micro frontend and reusability of source code using

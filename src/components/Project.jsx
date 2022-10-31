@@ -9,6 +9,7 @@ import BattleShipImage from "../assets/images/battle-ship.jpg";
 import AirlineManagementImage from "../assets/images/airline-management.jpg";
 import CovidTrackerImage from "../assets/images/covid-tracker.jpg";
 import ShoppingListImage from "../assets/images/shopping-list.jpg";
+import NotePadImage from "../assets/images/node-pad.jpg";
 import CameraImage from "../assets/images/camera.jpg";
 
 const useStyles = makeStyles((theme) => ({
@@ -163,6 +164,31 @@ const Project = (props) => {
                 A web app help to prepare shopping list with required quantity
                 and downloads the list prepare. This is built using React &
                 Redux. Planning to add new features and extend the support.
+              </p>
+            </CardContent>
+          </Card>
+        </a>
+        <a
+          href="https://notepad-rx.netlify.app"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={classes.href}
+        >
+          <Card className={classes.card}>
+            <CardHeader
+              className={classes.cardHeader}
+              title="Note Pad"
+            />
+            <CardContent className={classes.cardContent}>
+              <img
+                className={classes.projectImage}
+                src={NotePadImage}
+                alt="Note pad"
+              />
+              <p>
+                Note Pad is a cloud-enabled, secure, user profiled, react
+                notes.This application is built using React, express.js &
+                MongoDB. Used concepts like Oauth2, Redux, jwt & cookies.
               </p>
             </CardContent>
           </Card>
