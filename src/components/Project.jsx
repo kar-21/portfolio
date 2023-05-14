@@ -71,7 +71,7 @@ const Project = (props) => {
       bgImage={CameraImage}
       bgImageAlt="sunset-parallex"
     >
-      <h1 className={classes.header}>// Projects</h1>
+      <h1 className={classes.header}>// Pet Projects</h1>
       <div className={classes.projectContainer}>
         <a
           href="https://battleship-p5.netlify.app"
@@ -175,10 +175,7 @@ const Project = (props) => {
           className={classes.href}
         >
           <Card className={classes.card}>
-            <CardHeader
-              className={classes.cardHeader}
-              title="Note Pad"
-            />
+            <CardHeader className={classes.cardHeader} title="Note Pad" />
             <CardContent className={classes.cardContent}>
               <img
                 className={classes.projectImage}

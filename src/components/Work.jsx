@@ -57,7 +57,7 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: "0px",
   },
   h3: {
-    marginTop: "0px",
+    margin: "0px",
     marginLeft: "2%",
     fontSize: "0.9rem",
   },
@@ -122,86 +122,56 @@ const WorkComponent = (props) => {
       <div className={classes.introductionTechnologiesContainer}>
         <div className={classes.introduction}>
           <div className={classes.companyHeader}>
-            <h2 className={classes.h2}>Mindtree</h2>
-            <h3 className={classes.h3}>[ June-2019 to Nov-2021 ]</h3>
+            <h2>Accenture</h2>
+            <h3 className={classes.h3}>[ Dec-2021 to Present ]</h3>
+            <h3 className={classes.h3}>
+              Roles: Custom Software Development Specialist – Application
+              Development Specialist – Application Development Senior Analyst
+            </h3>
           </div>
           <div className={classes.content}>
             <ul className={classes.padding}>
               <li>
-                Joined the company as a fresher and gained a hand full of
-                experience in the MEAN stack.
+                Overseeing the software development lifecycle. Follow best
+                practices in code quality, unit testing, and PR review.
               </li>
               <li>
-                I used my analytical skills to tackle problems and honored my
-                ability to pick things up quickly.
+                Providing technical guidance and mentorship to juniors and
+                peers.
               </li>
               <li>
-                Worked with Angular, Electron.js, Node.js, and Express.js. I
-                explored a new JS library/framework and excelled in using it in
-                a short time.
+                Collaborating with cross-functional teams to design software
+                solutions that match the requirements.
               </li>
               <li>
-                Implemented features with canvas libraries such as P5.js and
-                Fabric and worked on web APIs such as Media Devices and
-                Navigator.
+                Providing technical support and troubleshooting assistance in a
+                live environment.
               </li>
               <li>
-                Delivered all the features, tasks, and defects assigned on time.
-                I delivered the complex features involving lots of analytical
-                thinking.
-              </li>
-              <li>
-                My routine involves creating generic components, adhering to
-                best practices, Jira, and Git procedures.
-              </li>
-              <li>
-                Climbing steep learning curve including developing acquired
-                skills as well as acquiring new skills and knowledge on tools
-                and technologies.
-              </li>
-              <li>
-                Received 5 individual recognitions together with Master Mind &
-                Hats Off and 3 team recognitions together with the CREST Team
-                award.
+                Assisting with the design and development of software, including
+                prototypes, doing research, and refining the design.
               </li>
             </ul>
           </div>
           <div className={classes.companyHeader}>
-            <h2>Accenture</h2>
-            <h3 className={classes.h3}>[ Dec-2021 to Present ]</h3>
+            <h2 className={classes.h2}>Mindtree</h2>
+            <h3 className={classes.h3}>[ June-2019 to Nov-2021 ]</h3>
+            <h3 className={classes.h3}>Roles: Senior Engineer – Engineer</h3>
           </div>
           <div className={classes.content}>
             <ul className={classes.padding}>
               <li>
-                Worked on React, Node, and TypeScript. Worked on state
-                management using Redux along with persisting and caching the
-                Redux states.
+                Adhering to best practices, Jira, and Git processes, and
+                completing assigned tasks on time.
+              </li>
+              <li>Improving debugging abilities to resolve problems.</li>
+              <li>
+                Delivered features on time and writing clean code and developing
+                generic, reusable components and services.
               </li>
               <li>
-                Implemented micro frontend and reusability of source code using
-                the concepts of Lerna & single-SPA. Worked on cross-platform
-                applications.
-              </li>
-              <li>
-                Be familiar with SVG chart libraries like D3.js, Recharts, and
-                Victory Charts, as well as the redux tool kit, and react native.
-              </li>
-              <li>
-                More than 90% of the developed code has unit tests that were
-                written in Jest. used best practices to maintain the integrity
-                of the code.
-              </li>
-              <li>
-                Developed strong debugging and problem-solving skills by
-                strengthening my analytical skills
-              </li>
-              <li>
-                Assisted my peers when they were stuck by explaining the logic,
-                requirements, and functionalities.
-              </li>
-              <li>
-                Received 4 individual recognitions together with the iChamp
-                award and Stewardship.
+                Climbing the steep learning curve, which includes developing
+                existing skills and learning new ones.
               </li>
             </ul>
           </div>

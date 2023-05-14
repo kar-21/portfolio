@@ -154,8 +154,9 @@ const Profile = (props) => {
       <div className={classes.meContent}>
         <div className={classes.content}>
           <p>
-            I am a Full Stack JavaScript Developer, an enthusiastic learner, a
-            critical thinker, and passionate about acquiring new skills.
+            I am a Full Stack JavaScript Developer with about 4 years of
+            experience, an enthusiastic learner, a critical thinker, and
+            passionate about acquiring new skills.
           </p>
           <div className={classes.profileImageContentContainer}>
             <img

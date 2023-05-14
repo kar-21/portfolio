@@ -94,6 +94,9 @@ const NavigationComponent = (props) => {
         <a className={classes.hyperLink} onClick={props.onClickWork}>
           <span>/ Work</span>
         </a>
+        <a className={classes.hyperLink} onClick={props.onClickProject}>
+          <span>/ Project</span>
+        </a>
       </div>
       <div className={classes.endNavigation}>
         <div className={classes.name}>

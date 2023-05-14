@@ -13,10 +13,12 @@ import { Parallax } from "react-parallax";
 import darkTheme from "./assets/images/dark-code.jpg";
 import lightTheme from "./assets/images/light-code.jpg";
 import Project from "./components/Project";
+import ProjectExperience from "./components/ProjectExperience";
 
 const App = () => {
   const meRefs = React.createRef();
   const workRefs = React.createRef();
+  const projectRefs = React.createRef();
 
   const theme = createTheme({
     palette: {
@@ -31,6 +33,9 @@ const App = () => {
   };
   const scrollToWork = () => {
     window.scrollTo(0, workRefs.current.offsetTop);
+  };
+  const scrollToProject = () => {
+    window.scrollTo(0, projectRefs.current.offsetTop);
   };
   const toggleTheme = (checked) => {
     const theme1 = createTheme({
@@ -54,6 +59,7 @@ const App = () => {
           <NavigationComponent
             onClickMe={scrollToMe}
             onClickWork={scrollToWork}
+            onClickProject={scrollToProject}
             toggleTheme={toggleTheme}
           />
           <HelloComponent
@@ -64,6 +70,7 @@ const App = () => {
         <ProfileComponent refProp={meRefs} />
         <EducationComponent />
         <WorkComponent refProp={workRefs} theme={themeType.palette.type} />
+        <ProjectExperience refProp={projectRefs} theme={themeType.palette.type} />
         <Project />
         <ContactComponent theme={themeType.palette.type} />
       </ThemeProvider>
