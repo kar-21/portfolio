@@ -41,7 +41,7 @@ registerRoute(
     if (
       url.pathname.startsWith("/_") ||
       lowerPath.startsWith("/auth/") ||
-      lowerPath == "/login"
+      lowerPath === "/login"
     ) {
       return false;
     }
