@@ -13,7 +13,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import SvgIcon from "@mui/material/SvgIcon";
 
 import AvatarImage from "../../assets/images/avatar.jpg";
-import { ReactComponent as AppLogo } from "../../assets/icons/app-logo.svg";
+import { ReactComponent as AppLogo } from "../../logo.svg";
 
 const AppBarComponent = ({ handleNavigation }: any): JSX.Element => {
   const pages = ["Me", "Work", "Project", "Contact"];
