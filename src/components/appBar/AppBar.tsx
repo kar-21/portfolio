@@ -82,7 +82,6 @@ const AppBarComponent = ({ handleNavigation }: any): JSX.Element => {
               }}
               open={Boolean(anchorElNav)}
               onClose={() => {
-                console.log(">>>>> close of menu");
                 handleCloseNavMenu("");
               }}
               sx={{
