@@ -36,3 +36,312 @@
     transform: rotate(360deg);
   }
 }
+
+.css-p51h6s-MuiInputBase-input-MuiOutlinedInput-input {
+  padding: 8px !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@mixin animation($animate...) {
+  $max: length($animate);
+  $animations: "";
+  @for $i from 1 through $max {
+    $animations: #{$animations + nth($animate, $i)};
+    @if $i < $max {
+      $animations: #{$animations + ", "};
+    }
+  }
+  -webkit-animation: $animations;
+  -moz-animation: $animations;
+  -o-animation: $animations;
+  animation: $animations;
+}
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+@mixin keyframes($animationName) {
+  @-webkit-keyframes #{$animationName} {
+    @content;
+  }
+  @-moz-keyframes #{$animationName} {
+    @content;
+  }
+  @-o-keyframes #{$animationName} {
+    @content;
+  }
+  @keyframes #{$animationName} {
+    @content;
+  }
+}
+
+//theme
+$yellow: #f5d300;
+$black: #414141;
+$lines: #757474;
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.text {
+  opacity: 0;
+  background-color: #525252;
+  p {
+    @include animation("type .3s steps(60, end) 3.7s");
+  }
+  p:nth-child(2) {
+    @include animation("type2 .5s steps(60, end) 3.7s");
+  }
+  @include animation("on .6s ease-in-out 3.7s forwards");
+}
+
+.splash {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  &_logo {
+    position: absolute;
+    margin: -15px 0 0 -25px;
+    top: calc(50vh - 45px);
+    z-index: 5;
+    left: calc(50vw - 45px);
+    width: 125px;
+    text-align: center;
+    height: 120px;
+    font-size: 110px;
+    font-weight: 600;
+    color: #ffffff;
+    fill: #ffffff;
+    stroke: #ffffff;
+    opacity: 1;
+    font-family: "Roboto";
+    will-change: opacity;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    .svg-icon {
+      font-size: unset;
+      @include animation(
+        "logoicon .3s ease-in 1.5s forwards, off .6s ease-in-out 3.2s forwards"
+      );
+    }
+    @include animation(
+      "logo .3s ease-in 1.5s forwards, off .6s ease-in-out 3.2s forwards"
+    );
+    &:before {
+      display: block;
+      position: absolute;
+      // left: 15px;
+      bottom: -5px;
+      width: 125px;
+      height: 1px;
+      background-color: $lines;
+      content: "";
+    }
+    &:after {
+      display: block;
+      position: absolute;
+      // left: 15px;
+      top: -5px;
+      width: 125px;
+      height: 1px;
+      background-color: $lines;
+      content: "";
+      will-change: width;
+    }
+  }
+  &_svg {
+    position: relative;
+    margin: auto;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    right: 0;
+    svg {
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: visible;
+      backface-visibility: visible;
+      rect {
+        width: 100%;
+        height: 100%;
+        fill: $yellow;
+        stroke: 0;
+        -webkit-clip-path: polygon(
+          calc(50vw - 140px) calc(50vh - 100px),
+          calc(50vw + 140px) calc(50vh - 100px),
+          calc(50vw + 140px) calc(50vh + 100px),
+          calc(50vw - 140px) calc(50vh + 100px)
+        );
+        clip-path: polygon(
+          calc(50vw - 140px) calc(50vh - 100px),
+          calc(50vw + 140px) calc(50vh - 100px),
+          calc(50vw + 140px) calc(50vh + 100px),
+          calc(50vw - 140px) calc(50vh + 100px)
+        );
+        @include animation("expand .7s ease-in forwards 2.7s");
+      }
+    }
+  }
+  &_minimize {
+    position: absolute;
+    margin: auto;
+    width: 0%;
+    height: 0%;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    svg {
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: visible;
+      backface-visibility: visible;
+      rect {
+        width: 100%;
+        height: 100%;
+        -webkit-clip-path: polygon(0vw 0vh, 100vw 0vh, 100vw 100vh, 0vw 100vh);
+        clip-path: polygon(0vw 0vh, 100vw 0vh, 100vw 100vh, 0vw 100vh);
+        @include animation(
+          "scale .2s ease-out forwards 1s, hide 1.3s ease-out forwards 1.2s"
+        );
+      }
+    }
+  }
+}
+
+@include keyframes(scale) {
+  100% {
+    -webkit-clip-path: polygon(
+      calc(50vw - 140px) calc(50vh - 100px),
+      calc(50vw + 140px) calc(50vh - 100px),
+      calc(50vw + 140px) calc(50vh + 100px),
+      calc(50vw - 140px) calc(50vh + 100px)
+    );
+    clip-path: polygon(
+      calc(50vw - 140px) calc(50vh - 100px),
+      calc(50vw + 140px) calc(50vh - 100px),
+      calc(50vw + 140px) calc(50vh + 100px),
+      calc(50vw - 140px) calc(50vh + 100px)
+    );
+  }
+}
+
+@include keyframes(hide) {
+  100% {
+    fill: transparent;
+  }
+}
+
+@include keyframes(off) {
+  100% {
+    opacity: 0;
+  }
+}
+
+@include keyframes(on) {
+  100% {
+    opacity: 1;
+  }
+}
+
+@include keyframes(logo) {
+  100% {
+    color: $black;
+  }
+}
+
+@include keyframes(logoicon) {
+  100% {
+    fill: $black;
+    stroke: $black;
+  }
+}
+
+@include keyframes(type) {
+  0% {
+    width: 0;
+  }
+}
+
+@include keyframes(type2) {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 0;
+  }
+  // 100% {
+  //   width: 100;
+  // }
+}
+
+@include keyframes(expand) {
+  0% {
+  }
+  25% {
+    -webkit-clip-path: polygon(
+      0vw 0vh,
+      calc(50vw + 140px) calc(50vh - 100px),
+      calc(50vw + 140px) calc(50vh + 100px),
+      calc(50vw - 140px) calc(50vh + 100px)
+    );
+    clip-path: polygon(
+      0vw 0vh,
+      calc(50vw + 140px) calc(50vh - 100px),
+      calc(50vw + 140px) calc(50vh + 100px),
+      calc(50vw - 140px) calc(50vh + 100px)
+    );
+    fill: white;
+  }
+  50% {
+    -webkit-clip-path: polygon(
+      0vw 0vh,
+      100vw 0vh,
+      calc(50vw + 140px) calc(50vh + 100px),
+      calc(50vw - 140px) calc(50vh + 100px)
+    );
+    clip-path: polygon(
+      0vw 0vh,
+      100vw 0vh,
+      calc(50vw + 140px) calc(50vh + 100px),
+      calc(50vw - 140px) calc(50vh + 100px)
+    );
+    fill: $yellow;
+  }
+  75% {
+    -webkit-clip-path: polygon(
+      0vw 0vh,
+      100vw 0vh,
+      calc(50vw + 140px) calc(50vh + 100px),
+      0vw 100vh
+    );
+    clip-path: polygon(
+      0vw 0vh,
+      100vw 0vh,
+      calc(50vw + 140px) calc(50vh + 100px),
+      0vw 100vh
+    );
+    fill: white;
+  }
+  100% {
+    -webkit-clip-path: polygon(0vw 0vh, 100vw 0vh, 100vw 100vh, 0vw 100vh);
+    clip-path: polygon(0vw 0vh, 100vw 0vh, 100vw 100vh, 0vw 100vh);
+    fill: inherit;
+  }
+}
