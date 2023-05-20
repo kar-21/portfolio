@@ -17,8 +17,6 @@ const EmailComponent = (): JSX.Element => {
   const re =
     /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/i;
 
-  console.log("MAILER_URL", process.env);
-
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -80,7 +78,6 @@ const EmailComponent = (): JSX.Element => {
           setAlertMessageType("error");
           setOpenSnackBar(true);
         });
-      console.log(name, email, message);
     }
   };
 
