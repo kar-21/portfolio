@@ -3,7 +3,7 @@ export const WorkExperience = [
     companyName: "Accenture",
     timeLine: "Dec-2021 to Present",
     designations: [
-      "Custom Software Development Specialist",
+      "Custom Software Engineering Specialist",
       "Application Development Specialist",
       "Application Development Senior Analyst",
     ],
