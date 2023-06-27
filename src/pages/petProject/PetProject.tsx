@@ -28,22 +28,28 @@ const PetProjectPage = (): JSX.Element => {
           }}
         >
           {PetProjects.map((project) => (
-            <Card sx={{ width: "250px", m: "12px" }}>
-              <CardMedia
-                component="img"
-                height="140"
-                image={project.image}
-                alt="green iguana"
-              />
-              <CardContent>
-                <Typography gutterBottom variant="h5" color="text.primary">
-                  {project.projectName}
-                </Typography>
-                <Typography variant="body2" color="text.primary">
-                  {project.description}
-                </Typography>
-              </CardContent>
-            </Card>
+            <a
+              target="_blank"
+              href={project.url}
+              rel="noreferrer"
+            >
+              <Card sx={{ width: "250px", m: "12px" }}>
+                <CardMedia
+                  component="img"
+                  height="140"
+                  image={project.image}
+                  alt="green iguana"
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5" color="text.primary">
+                    {project.projectName}
+                  </Typography>
+                  <Typography variant="body2" color="text.primary">
+                    {project.description}
+                  </Typography>
+                </CardContent>
+              </Card>
+            </a>
           ))}
         </Box>
       </Box>
