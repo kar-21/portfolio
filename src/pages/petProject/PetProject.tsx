@@ -29,6 +29,7 @@ const PetProjectPage = (): JSX.Element => {
         >
           {PetProjects.map((project) => (
             <a
+              key={project.projectName}
               target="_blank"
               href={project.url}
               rel="noreferrer"

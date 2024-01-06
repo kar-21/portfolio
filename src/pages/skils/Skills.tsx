@@ -28,6 +28,7 @@ const SkillsPage = (): JSX.Element => {
           <Box sx={{ width: { md: "40%", xs: "100%" }, textAlign: "center" }}>
             {SkillArray.map((skill) => (
               <Chip
+                key={skill.label}
                 sx={{
                   mx: "1%",
                   my: "0.5%",

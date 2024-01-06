@@ -31,8 +31,9 @@ const ProjectExperiencePage = ({ refProp }: any): JSX.Element => {
       >
         {ProjectExperience.map((experience) => (
           <Paper
+            key={experience.projectName}
             elevation={8}
-            variant="outlined"
+            // variant="outlined"
             sx={{
               borderRadius: "16px",
               m: { md: "1%", xs: "2%" },
@@ -50,6 +51,7 @@ const ProjectExperiencePage = ({ refProp }: any): JSX.Element => {
               <Typography variant="h4">{experience.projectName}</Typography>
               {experience.techStacks.map((techStack) => (
                 <Chip
+                  key={techStack}
                   sx={{ mx: "0.5%", my: "0.5%" }}
                   label={techStack}
                   color="secondary"
@@ -64,7 +66,11 @@ const ProjectExperiencePage = ({ refProp }: any): JSX.Element => {
               }}
             >
               {experience.description.map((points) => (
-                <ListItem alignItems="flex-start" sx={{ p: "4px" }}>
+                <ListItem
+                  key={points}
+                  alignItems="flex-start"
+                  sx={{ p: "4px" }}
+                >
                   <ListItemAvatar sx={{ minWidth: "32px", m: "0px" }}>
                     <Typography variant="body1">
                       <ChevronRightOutlinedIcon />

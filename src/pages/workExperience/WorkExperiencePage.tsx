@@ -29,6 +29,7 @@ const WorkExperiencePage = ({ refProp }: any): JSX.Element => {
       >
         {WorkExperience.map((experience) => (
           <Paper
+            key={experience.companyName}
             elevation={8}
             sx={{
               borderRadius: "16px",
@@ -47,6 +48,7 @@ const WorkExperiencePage = ({ refProp }: any): JSX.Element => {
               <Typography variant="h4">{experience.companyName}</Typography>
               {experience.designations.map((designation) => (
                 <Chip
+                  key={designation}
                   sx={{ mx: "1%", my: "0.5%" }}
                   label={designation}
                   color="primary"
@@ -62,7 +64,7 @@ const WorkExperiencePage = ({ refProp }: any): JSX.Element => {
               }}
             >
               {experience.description.map((points) => (
-                <ListItem alignItems="flex-start">
+                <ListItem alignItems="flex-start" key={points}>
                   <ListItemAvatar sx={{ minWidth: "32px", m: "0px" }}>
                     <Typography variant="body1">
                       <ChevronRightOutlinedIcon />

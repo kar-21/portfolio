@@ -50,7 +50,10 @@ const ContactPage = ({ refProp }: any): JSX.Element => {
         >
           <List>
             {ContactMeRedirects.map((contact) => (
-              <ListItemButton onClick={() => window.open(contact.redirectUrl)}>
+              <ListItemButton
+                key={contact.name}
+                onClick={() => window.open(contact.redirectUrl)}
+              >
                 <ListItemIcon>
                   <FontAwesomeIcon icon={contact.icon} />
                 </ListItemIcon>
