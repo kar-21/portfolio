@@ -42,11 +42,11 @@ const EducationPage = (): JSX.Element => {
         }}
       >
         <Typography variant="h5" sx={{ m: "4px" }}>
-          {`I completed {EducationRow[0].course} from the ${EducationRow[0].collegeName} affiliated to ${EducationRow[0].universityName} with an aggregate of ${EducationRow[0].aggregate} in the year ${EducationRow[0].yearOfPassing}.`}
+          {`I completed ${EducationRow[0].course} from the ${EducationRow[0].collegeName} affiliated to ${EducationRow[0].universityName} with an aggregate of ${EducationRow[0].aggregate} in the year ${EducationRow[0].yearOfPassing}.`}
         </Typography>
         <Divider />
         <Typography variant="h5" sx={{ m: "4px" }}>
-          {`In the year {EducationRow[1].yearOfPassing}, I completed ${EducationRow[1].course} in {EducationRow[1].domain} from the ${EducationRow[1].collegeName} affiliated to ${EducationRow[1].universityName} with an aggregate of ${EducationRow[1].aggregate}.`}
+          {`In the year ${EducationRow[1].yearOfPassing}, I completed ${EducationRow[1].course} in ${EducationRow[1].domain} from the ${EducationRow[1].collegeName} affiliated to ${EducationRow[1].universityName} with an aggregate of ${EducationRow[1].aggregate}.`}
         </Typography>
         <Divider />
         <Typography variant="h5" sx={{ m: "4px" }}>

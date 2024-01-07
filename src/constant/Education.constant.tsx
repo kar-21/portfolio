@@ -18,12 +18,12 @@ const createData = (
 
 export const EducationRow = [
   createData(
-    "SSLC",
-    "-",
-    "SVEI High School, Mysuru",
-    "Karnataka Secondary Education Examination Board",
-    "89.76%",
-    2013
+    "Bachelor of Engineering",
+    "Electronics & Communication",
+    "NIE Institute of Engineering",
+    "Visvesvaraya Technological University",
+    "7.53 GPA",
+    2019
   ),
   createData(
     "PUC",
@@ -34,11 +34,11 @@ export const EducationRow = [
     2015
   ),
   createData(
-    "Bachelor of Engineering",
-    "Electronics & Communication",
-    "NIE Institute of Engineering",
-    "Visvesvaraya Technological University",
-    "7.53 GPA",
-    2019
+    "SSLC",
+    "-",
+    "SVEI High School, Mysuru",
+    "Karnataka Secondary Education Examination Board",
+    "89.76%",
+    2013
   ),
 ];
