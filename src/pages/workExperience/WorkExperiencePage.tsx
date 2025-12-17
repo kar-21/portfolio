@@ -1,3 +1,5 @@
+import ChevronRightOutlinedIcon from "@mui/icons-material/ChevronRightOutlined";
+import FaceIcon from "@mui/icons-material/FaceOutlined";
 import {
   Chip,
   List,
@@ -8,8 +10,6 @@ import {
   Typography,
 } from "@mui/material";
 import { Box } from "@mui/system";
-import FaceIcon from "@mui/icons-material/FaceOutlined";
-import ChevronRightOutlinedIcon from "@mui/icons-material/ChevronRightOutlined";
 
 import { WorkExperience } from "../../constant/Work.constant";
 

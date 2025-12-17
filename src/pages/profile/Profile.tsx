@@ -35,7 +35,7 @@ const ProfilePage = ({ refProp }: any) => {
           <Typography variant="h5" sx={{ my: "2%" }}>
             As a Full Stack JavaScript and Typescript Developer. I worked on a
             cross-platform application involving various JS libraries and
-            frameworks such as React, Angular, Electron.js, and Node.js. I am
+            frameworks such as React, Angular, Electron.js, Node.js ans AWS. I am
             passionate about new technologies and software development.
           </Typography>
         </Box>

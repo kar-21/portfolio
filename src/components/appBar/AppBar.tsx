@@ -1,16 +1,17 @@
-import { useState } from "react";
-import { Menu, MenuItem, Button } from "@mui/material";
+import MenuIcon from "@mui/icons-material/Menu";
 import {
+  AppBar,
+  Avatar,
+  Button,
+  IconButton,
+  Menu,
+  MenuItem,
   Toolbar,
   Typography,
-  IconButton,
-  Tooltip,
-  Avatar,
-  AppBar,
 } from "@mui/material";
-import { Container, Box } from "@mui/system";
-import MenuIcon from "@mui/icons-material/Menu";
 import SvgIcon from "@mui/material/SvgIcon";
+import { Box, Container } from "@mui/system";
+import { useState } from "react";
 
 import AvatarImage from "../../assets/images/avatar.jpg";
 import { ReactComponent as AppLogo } from "../../logo.svg";
@@ -28,6 +29,7 @@ const AppBarComponent = ({ handleNavigation }: any): JSX.Element => {
   };
 
   const handleCloseNavMenu = (path: string) => {
+    setAnchorElUser(null);
     setAnchorElNav(null);
     handleNavigation(path);
   };
@@ -131,13 +133,11 @@ const AppBarComponent = ({ handleNavigation }: any): JSX.Element => {
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
-            <Tooltip title="Open settings">
-              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src={AvatarImage} />
-              </IconButton>
-            </Tooltip>
+            <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
+              <Avatar alt="Remy Sharp" src={AvatarImage} />
+            </IconButton>
             <Menu
-              //   sx={{ mt: "45px" }}
+              sx={{ mt: "45px" }}
               id="menu-appbar"
               anchorEl={anchorElUser}
               anchorOrigin={{

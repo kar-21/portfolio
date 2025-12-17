@@ -1,3 +1,4 @@
+import ChevronRightOutlinedIcon from "@mui/icons-material/ChevronRightOutlined";
 import {
   Chip,
   List,
@@ -8,7 +9,6 @@ import {
   Typography,
 } from "@mui/material";
 import { Box } from "@mui/system";
-import ChevronRightOutlinedIcon from "@mui/icons-material/ChevronRightOutlined";
 
 import { ProjectExperience } from "../../constant/Project.constant";
 
@@ -26,7 +26,7 @@ const ProjectExperiencePage = ({ refProp }: any): JSX.Element => {
           flexWrap: "wrap",
           justifyContent: "space-evenly",
           m: "auto",
-          width: { md: "80%", xs: "100%" },
+          width: { md: "100%", xs: "100%" },
         }}
       >
         {ProjectExperience.map((experience) => (

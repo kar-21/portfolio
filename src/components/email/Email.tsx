@@ -1,17 +1,17 @@
+import SendIcon from "@mui/icons-material/Send";
 import {
-  Paper,
-  Typography,
-  TextField,
+  Alert,
+  AlertColor,
   Button,
   CircularProgress,
-  AlertColor,
-  Alert,
+  Paper,
   Snackbar,
+  TextField,
+  Typography,
 } from "@mui/material";
 import { Box } from "@mui/system";
 import axios, { AxiosResponse } from "axios";
 import { useState } from "react";
-import SendIcon from "@mui/icons-material/Send";
 
 const EmailComponent = (): JSX.Element => {
   const re =

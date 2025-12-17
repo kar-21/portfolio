@@ -2,8 +2,8 @@ import { Chip, Paper, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import { Parallax } from "react-parallax";
 
-import RadarChartComponent from "../../components/radarChart/radarChart";
 import backgroundImage from "../../assets/images/flight.jpg";
+import RadarChartComponent from "../../components/radarChart/radarChart";
 import { SkillArray } from "../../constant/Skills.constant";
 
 const SkillsPage = (): JSX.Element => {

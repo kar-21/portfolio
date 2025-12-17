@@ -1,5 +1,5 @@
-import BattleShip from "../assets/images/battle-ship.jpg";
 import AirlineManagement from "../assets/images/airline-management.jpg";
+import BattleShip from "../assets/images/battle-ship.jpg";
 import CovidTracker from "../assets/images/covid-tracker.jpg";
 import NotePad from "../assets/images/note-pad.jpg";
 import ShoppingList from "../assets/images/shopping-list.jpg";

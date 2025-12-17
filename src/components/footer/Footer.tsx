@@ -1,14 +1,14 @@
 import { Divider, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import {
-  EmailShareButton,
-  FacebookShareButton,
-  LinkedinShareButton,
-  WhatsappShareButton,
-  FacebookIcon,
-  WhatsappIcon,
-  LinkedinIcon,
   EmailIcon,
+  EmailShareButton,
+  FacebookIcon,
+  FacebookShareButton,
+  LinkedinIcon,
+  LinkedinShareButton,
+  WhatsappIcon,
+  WhatsappShareButton,
 } from "react-share";
 
 const FooterComponent = () => {
@@ -57,7 +57,7 @@ const FooterComponent = () => {
         </Box>
         <Divider sx={{ display: { xs: "block", md: "none" } }} />
         <Box sx={{ textAlign: { xs: "center", md: "inherit" } }}>
-          <Typography variant="body1">© Copyright 2023</Typography>
+          <Typography variant="body1">© Copyright 2026</Typography>
           <Typography variant="body1">
             This website is made with love and React.js
           </Typography>

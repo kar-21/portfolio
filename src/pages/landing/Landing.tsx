@@ -1,5 +1,5 @@
-import { Parallax } from "react-parallax";
 import { Box, Typography } from "@mui/material";
+import { Parallax } from "react-parallax";
 
 import backgroundImage from "../../assets/images/dark-code.jpg";
 
@@ -14,10 +14,10 @@ const LandingPage = (): JSX.Element => {
       <Box
         sx={{ width: "75%", mx: "auto", flex: 1, my: { xs: "8%", lg: "12%" } }}
       >
-        <Typography variant="h1" sx={{ mb: "2%" }}>
+        <Typography variant="h1" sx={{ mb: "2%", fontWeight: 400 }}>
           Hello! - I am Karthik.
         </Typography>
-        <Typography variant="h1">
+        <Typography variant="h1" sx={{ fontWeight: 400 }}>
           FullStack JavaScript Developer based in Bengaluru, India.{" "}
           <Typography
             variant="body2"

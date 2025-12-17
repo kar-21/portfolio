@@ -1,20 +1,20 @@
 import { Box } from "@mui/system";
-import "react-svg-radar-chart/build/css/index.css";
 import {
   Chart as ChartJS,
-  RadialLinearScale,
-  PointElement,
-  LineElement,
   Filler,
+  LineElement,
+  PointElement,
+  RadialLinearScale,
 } from "chart.js";
-import { Radar } from "react-chartjs-2";
 import ChartDataLabels from "chartjs-plugin-datalabels";
+import { Radar } from "react-chartjs-2";
+import "react-svg-radar-chart/build/css/index.css";
 
 const RadarChartComponent = () => {
   ChartJS.register(RadialLinearScale, PointElement, LineElement, Filler);
 
   return (
-    <Box sx={{ width: "100%" }}>
+    <Box sx={{ width: "98%" }}>
       {/* <Box> */}
       <Radar
         data={{
@@ -23,16 +23,16 @@ const RadarChartComponent = () => {
             "Angular",
             "React.js",
             "Redux",
+            "AWS",
             "Git",
-            "NgRx",
             "Node.js",
             "TypeScript",
           ],
           datasets: [
             {
-              data: [0.93, 0.85, 0.85, 0.7, 0.78, 0.7, 0.8, 0.88],
+              data: [0.93, 0.85, 0.85, 0.75, 0.6, 0.8, 0.8, 0.88],
               borderColor: "#CA3E47",
-              backgroundColor: "rgba(202, 62, 71, 0.65)",
+              backgroundColor: "rgba(202, 62, 71, 0.5)",
               borderWidth: 4,
             },
           ],

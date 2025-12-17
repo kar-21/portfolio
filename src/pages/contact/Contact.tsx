@@ -1,3 +1,4 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   List,
   ListItemButton,
@@ -6,7 +7,6 @@ import {
   Typography,
 } from "@mui/material";
 import { Box } from "@mui/system";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import EmailComponent from "../../components/email/Email";
 import { ContactMeRedirects } from "../../constant/Contact.constant";

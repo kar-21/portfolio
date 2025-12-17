@@ -3,7 +3,7 @@ import {
   faHackerrank,
   faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope, faAsterisk } from "@fortawesome/free-solid-svg-icons";
+import { faAsterisk, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 export const ContactMeRedirects = [
   {

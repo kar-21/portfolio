@@ -1,4 +1,3 @@
-import { createRef } from "react";
 import {
   CssBaseline,
   SvgIcon,
@@ -6,20 +5,21 @@ import {
   createTheme,
   responsiveFontSizes,
 } from "@mui/material";
+import { createRef } from "react";
 
 import "./App.scss";
-import AppBarComponent from "./components/appBar/AppBar";
-import LandingPage from "./pages/landing/Landing";
-import ProfilePage from "./pages/profile/Profile";
-import WorkExperiencePage from "./pages/workExperience/WorkExperiencePage";
-import SkillsPage from "./pages/skils/Skills";
-import DividerComponent from "./components/divider/Divider";
-import ProjectExperiencePage from "./pages/projectExperience/ProjectExperience";
-import PetProjectPage from "./pages/petProject/PetProject";
-import ContactPage from "./pages/contact/Contact";
-import FooterComponent from "./components/footer/Footer";
 import { ReactComponent as AppLogo } from "./assets/icons/app-logo-flash.svg";
+import AppBarComponent from "./components/appBar/AppBar";
+import DividerComponent from "./components/divider/Divider";
+import FooterComponent from "./components/footer/Footer";
+import ContactPage from "./pages/contact/Contact";
 import EducationPage from "./pages/education/Education";
+import LandingPage from "./pages/landing/Landing";
+import PetProjectPage from "./pages/petProject/PetProject";
+import ProfilePage from "./pages/profile/Profile";
+import ProjectExperiencePage from "./pages/projectExperience/ProjectExperience";
+import SkillsPage from "./pages/skils/Skills";
+import WorkExperiencePage from "./pages/workExperience/WorkExperiencePage";
 
 function App() {
   let theme = createTheme({

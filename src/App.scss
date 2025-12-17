@@ -118,11 +118,11 @@ body {
   );
   &_logo {
     position: absolute;
-    margin: -15px 0 0 -25px;
+    margin: -15px 0 0 0;
     top: calc(50vh - 45px);
     z-index: 5;
-    left: calc(50vw - 45px);
-    width: 125px;
+    left: calc(50vw - 120px);
+    width: 240px;
     text-align: center;
     height: 120px;
     font-size: 110px;
